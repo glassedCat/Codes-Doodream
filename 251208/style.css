@@ -1,0 +1,15 @@
+.box
+{
+    border: 2px solid #cccccc;
+    padding: 15px;
+}
+.no-bullet
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sentence_1
+{
+    font-style: italic;
+}
