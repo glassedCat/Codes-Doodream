@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        b
+        {
+            background-color: purple;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" enctype="multipart/form-data">
+        <p>
+            <input type="file" accept="image/jpeg, image/gif">
+        </p>
+        <p>
+            <b>form</b> 태그의 <b>enctype="multipart/form-data"</b>는 서버에 파일을 업로드할 때 올바르게 업로드
+            하도록 도와준다. 
+        </p>
+        <p>
+            <b>&lt;input&gt;</b> 태그의 <b>accept=""</b> 속성은 업로드시킬 파일의 MIME 타입을 브라우저에 알려준다.
+        </p>
+        <hr>
+        <p>
+            <input type="hidden" name="hidden" value="true">
+        </p>
+        <p>
+            <b>&lt;input type="hidden"&gt;</b>이 태그는 사용자가 입력한 데이터는 아니지만 클라이언트 컴퓨터가 
+            서버 컴퓨터로 특정한 데이터를 전송하고 싶은 경우에 사용한다. 화면에는 아무것도 나타나지 않고 사용자가
+            "제출" 버튼을 누를 떄, 서버로 name 값과 value 값이 전송된다.
+        </p>
+    </form>
+</body>
+</html>

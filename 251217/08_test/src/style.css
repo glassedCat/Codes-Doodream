@@ -1,0 +1,63 @@
+fieldset
+       {
+        min-width: 0;
+        width: 700px;
+       }
+        fieldset div
+        {
+            display: flex;
+            margin-bottom:10px;
+        }
+        label
+        {
+            text-align: left;
+            width: 100px;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        input
+        {
+            box-sizing: border-box;
+        }
+        .field, .field-email
+        {
+            margin-left: 50px;
+        }
+        .field
+        {
+            width: 300px;
+        }
+        .field-email
+        {
+            width: 150px;
+        }
+        .serialCode
+        {
+            display: flex;
+        }
+        .serialInput
+        {
+            padding: 2px;
+            width: 60px;
+            height: 25px;
+        }
+        .serialInput:not(#serial-1)
+        {
+            margin-left: 10px;
+        }
+        #serial-1
+        {
+            margin-left: 50px;
+        }
+        .submit
+        {
+            width: 50px;
+            height: 30px;
+            cursor: pointer;
+            margin-top: 5px;
+            margin-left: 4px;
+        }
+        #domain-list
+        {
+            margin-left: 5px;
+        }

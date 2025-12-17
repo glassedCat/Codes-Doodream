@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Added Input</title>
+    <style>
+        #search-submit, #submit
+        {
+            cursor: pointer;
+        }
+        .form-layout
+        {
+            display: flex;
+            flex-direction: column; /* 요소들을 세로로 쌓음. */
+            gap: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+     
+        .form-group label
+        {
+            width: 100px; /* 레이블에 필요한 고정너비를 설정 */
+            margin-right: 10px;
+            text-align: right;
+            flex-shrink: 0;
+        }
+        .form-group input
+        {
+            flex-grow: 1; /* 나머지 공간을 채워서 모든 입력 칸의 너비를 통일 */
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 5px;
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="#" class="form-layout">
+        <fieldset> <!-- 박스 -->
+            <legend>Added Input</legend> <!-- 박스 최상단에 제목을 적을 수 있다.-->
+            <div class="form-group">
+                <label for="search"> <!-- for: label 요소가 어떤 폼 컨트롤(예: <input><textarea><select> 등)과 연결되어 있는지 알려주는 역할 -->
+                Search: <input type="search" id="search">
+                <button type="submit" id="search-submit">Search</button>
+            </div>
+            <div class="form-group">
+                <label for="email">e-mail: </label>
+                <input type="email" id="email" id="input2">
+            </div>
+            <div class="form-group">
+                <label for="url">Site address: </label>
+                <input type="url" id="url" id="input3">
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>

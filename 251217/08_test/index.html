@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_08</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>필드 유효성 검사</legend>
+            <div>
+                <label for="name">* 이름</label>
+                <input class="field" type="name" id="name" name="name" placeholder="이름을 입력하세요" required>
+            </div>
+            <div>
+                <label for="id">* 아이디</label>
+                <input class="field" type="text" name="id" id="id" placeholder="사용할 아이디를 입력하세요" required>
+            </div>
+            <div>
+                <label for="password">* 비밀번호</label>
+                <input class="field" type="password" name="password" id="password" placeholder="사용할 패스워드를 입력하세요" required>
+            </div>
+            <div>
+                <label for="tel">* 전화번호</label>
+                <input class="field" type="tel" id="tel" name="tel" placeholder="전화번호를 입력하세요" required>
+            </div>
+            <div>
+                <label for="email">이메일 (선택)</label>
+                <input class="field-email" type="email" id="email" name="email" placeholder="이메일을 입력하세요" autocomplete>
+                <span>&nbsp;@&nbsp;</span>
+                <input type="text" id="domain-select" name="domain-select" class="field-email">
+                <p></p>
+                <select id="domain-list">
+                    <option value="type">직접입력</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="protonmail.com">protonmail.com</option>
+                    <option value="naver.com">naver.com</option>
+                </select>
+            </div>
+            <div class="serialCode">
+                <label for="serialNum">* 시리얼 번호</label>
+                <input type="text" class="serialInput" name="serial1" id="serial-1"><span>&nbsp;-&nbsp;</span>
+                <input type="text" class="serialInput" name="serial2"><span>&nbsp;-&nbsp;</span>
+                <input type="text" class="serialInput" name="serial3"><span>&nbsp;-&nbsp;</span>
+                <input type="text" class="serialInput" name="serial4"><span>&nbsp;-&nbsp;</span>
+                <input type="text" class="serialInput" name="serial5">
+            </div>
+            <div>
+                <input type="button" name="button-prev" value="이전">
+                <input type="button" name="button-next" value="다음">
+            </div>
+            <div>
+                <label for="readonlyTest">읽기전용 테스트</label>
+                <input type="text" id="readonlyTest" name="readonlyTest" class="field" readonly>
+            </div>
+            <div>
+                <label for="disabledTest">비활성화 테스트</label>
+                <input type="text" id="disabledTest" name="disabledTest" class="field" disabled>
+            </div>   
+            <div>
+                <label for="disabledTest">패턴 테스트</label>
+                <input type="text" id="patternTest" name="patternTest" class="field" pattern> <!-- 허용하는 입력의 형태를 정규식으로 저장함-->
+            </div>
+        </fieldset>
+        <input type="submit" class="submit" value="전송">
+    </form>
+</body>
+</html>
