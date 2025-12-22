@@ -1,0 +1,98 @@
+/*
+
+    1. Block (블록)
+정의: 혼자서 한 줄을 다 차지하는 독점적인 박스입니다.
+
+특징: * 상하좌우 마진(margin), 패딩(padding)이 모두 적용됩니다.
+width, height로 사이즈를 직접 정할 수 있습니다.
+옆에 아무도 못 오게 밀어내고 무조건 다음 줄로 넘어갑니다. (예: div, p, h1)
+
+
+2. Inline (인라인)
+정의: 흐르는 텍스트처럼 줄 속의 일부로 취급되는 요소입니다.
+
+특징:
+사이즈(width, height)를 지정할 수 없습니다. (글자 크기가 곧 사이즈)
+상하 마진(margin-top/bottom)이 제대로 적용되지 않습니다.
+줄 바꿈 없이 다른 요소와 한 줄에 나란히 배치됩니다. (예: span, a, b)
+
+
+3. Inline-block (인라인 블록)
+정의: 배치는 인라인처럼(한 줄로), 능력은 블록처럼(사이즈 조절) 사용하는 하이브리드 방식입니다.
+
+특징:
+inline처럼 옆으로 나란히 설 수 있습니다.
+동시에 block처럼 width, height로 박스 크기를 마음대로 조절할 수 있습니다.
+그라데이션 박스를 만들어서 가로로 여러 개 배치할 때 가장 많이 씁니다.
+
+*/
+
+
+
+.test-1>p
+{
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+    vertical-align: top;
+}
+.radial>p
+{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+/*
+    linear-gradient: 수직으로 한 방향으로 그라디언트를 나타냄
+    radial-gradient: 원형으로 그라디언트를 나타냄
+*/
+.test-1>p:nth-child(1)
+{
+    background-image: linear-gradient(rgb(250, 227, 244), rgb(255, 217, 246), rgb(252, 182, 236), rgb(252, 150, 228), rgb(248, 101, 214));
+}
+
+.test-1>p:nth-child(2)
+{
+    background-image: linear-gradient(45deg, rgb(250, 227, 244), rgb(255, 217, 246), rgb(252, 182, 236), rgb(252, 150, 228), rgb(248, 101, 214));
+
+}
+.test-1>p:nth-child(3)
+{
+    background-image: linear-gradient(to left, rgb(250, 227, 244), rgb(255, 217, 246), rgb(252, 182, 236), rgb(252, 150, 228), rgb(248, 101, 214));
+}
+.test-1>p:nth-child(4)
+{
+    background-image: linear-gradient(to left, white 0%, black 80%);
+}
+
+.test-1>p:nth-child(5)
+{
+    background-image: linear-gradient(to right, blue 5%, red 86%);
+}
+
+.test-1>p:nth-child(6)
+{
+    background-image: linear-gradient(to top, black 8%, lightpink 79%);
+}s
+
+.test-1>p:nth-child(7)
+{
+    background-image: linear-gradient(to bottom, purple 2% 47%, green 69%);
+}
+
+.radial>p:nth-child(1)
+{
+    background-image: radial-gradient(circle, lightpink, orange);
+}
+.radial>p:nth-child(2)
+{
+    background-image: radial-gradient(circle at 25px 88px, lightpink, red);
+}
+.radial>p:nth-child(3)
+{
+    background-image: radial-gradient(circle at 50% 50%, lightpink, violet)
+}

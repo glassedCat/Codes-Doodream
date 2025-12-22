@@ -7,26 +7,52 @@
 </head>
 <body>
 
+     <!-- 틀린 이유: 문제를 제대로 읽지 않음 (필수요소/포커스)  -->
+
+
     <form action="#">
         <fieldset>
             <legend>신상정보</legend>
             <ol>
                 <li>
                     <label for="name">이름</label>
-                    <input type="text" name="name" id="name" placeholder="이름">
+                    <input type="text" name="name" id="name" placeholder="이름"> <!-- autofocus, required 추가해야 했음 -->
                 </li>
                 <li>
                     <label for="email">이메일</label>
-                    <input type="email" name="email" id="email" placeholder="example@domain.com">
+                    <input type="email" name="email" id="email" placeholder="example@domain.com"> <!--  required 추가해야 했음 -->
                 </li>
                 <li>
                     <label for="tel">휴대폰 번호</label>
-                    <input type="tel" name="tel" id="tel" placeholder="01012345678">
+                    <input type="tel" name="tel" id="tel" placeholder="01012345678"> <!--  required 추가해야 했음 -->
                 </li>
             </ol>
         </fieldset>
         <p>
-            <input type="submit" value="제출">&nbsp;<input type="reset" value="지우기">
+            <input type="submit" value="제출">&nbsp;<input type="reset" value="지우기"> <!--  required 추가해야 했음 -->
+        </p>
+    </form>
+    <hr>
+     <form action="#">
+        <fieldset>
+            <legend>수정버전 (신상정보)</legend>
+            <ol>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" name="name" id="name" placeholder="이름" required autofocus> 
+                </li>
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="email" name="email" id="email" placeholder="example@domain.com" required> 
+                </li>
+                <li>
+                    <label for="tel">휴대폰 번호</label>
+                    <input type="tel" name="tel" id="tel" placeholder="01012345678" required> 
+                </li>
+            </ol>
+        </fieldset>
+        <p>
+            <input type="submit" value="제출">&nbsp;<input type="reset" value="지우기"> 
         </p>
     </form>
 

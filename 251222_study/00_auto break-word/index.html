@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow-wrap-break-word</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+    <h1>overflow-wrap-break-word : 자동 줄바꿈 기능</h1>
+    <p>overflow-wrap: break-word</p>
+    <p>영문을 띄어쓰기 없이 길게 입력하면 width값을 주어도 박스로 튀어나오게 되는데 이것을 가로폭에 맞추어
+        적당히 잘라 다음줄로 내려오도록 해줍니다.
+    </p>
+    <p>white-space</p>
+    <p>텍스트의 공백과 줄바꿈의 처리방법을 지정하는 속성입니다.</p>
+    <ul class="space">
+        <li>텍스트의 공백과 줄바꿈의 처리방법을 지정하는 속성입니다. 
+            normal - 자동줄바꿈
+        </li>
+        <li>텍스트의 공백과 줄바꿈의 처리방법을 지정하는 속성입니다
+            pre
+        </li>
+
+    </ul>
+
+    <p class="wrap">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae esse dolorum, iusto ullam fuga sit. 
+        Modi vitae quisquam asperiores hic tempore consectetur quas animi odit adipisci? Enim voluptatibus ullam placeat 
+        libero facere molestias unde debitis id fugit. Expedita quaerat repellat commodi debitis ab temporibus, hic aliquam 
+        quisquam minima assumenda accusantium optio nobis officiis illum odio fugit officia? Rerum ipsam voluptatem rem 
+        voluptatibus quaerat odit adipisci, necessitatibus, in, ducimus numquam quod corrupti exercitationem accusantium 
+        maiores sint fugiat dolores modi quidem qui sapiente. Sapiente ea optio assumenda repellendus, dolores sunt facere 
+        explicabo iusto quibusdam repellat libero perferendis suscipit autem eos illo!
+    </p>
+    <span class="wrap">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae esse dolorum, iusto ullam fuga sit. 
+        Modi vitae quisquam asperiores hic tempore consectetur quas animi odit adipisci? Enim voluptatibus ullam placeat 
+        libero facere molestias unde debitis id fugit. Expedita quaerat repellat commodi debitis ab temporibus, hic aliquam 
+        quisquam minima assumenda accusantium optio nobis officiis illum odio fugit officia? Rerum ipsam voluptatem rem 
+        voluptatibus quaerat odit adipisci, necessitatibus, in, ducimus numquam quod corrupti exercitationem accusantium 
+        maiores sint fugiat dolores modi quidem qui sapiente. Sapiente ea optio assumenda repellendus, dolores sunt facere 
+        explicabo iusto quibusdam repellat libero perferendis suscipit autem eos illo!
+    </span>
+    <hr>
+    <h2>text-overflow</h2>
+    <ul>
+        <strong><li>white-space (줄바꿈 및 공백 처리)</li></strong>
+        <strong><li>text-overflow (넘친 텍스트의 '모양' 처리)</li></strong>
+        <li>white-space: pre: 텍스트의 공백과 줄바꿈의 처리 방법을 지정하는 속성입니다.</li>
+        <li>white-space: nowrap: 텍스트의 공백과 줄바꿈의 처리 방법을 지정하는 속성입니다.</li>
+        <li>text-overflow: clip: 텍스트가 박스를 넘칠 때, 넘치는 부분을 그냥 뚝 끊어서 안 보이게 삭제합니다. (말줄임표 없음)</li>
+        <li>text-overflow: ellipsis: 텍스트가 박스를 넘칠 때, 넘치는 부분을 숨기고 끝에 **말줄임표(...)**를 자동으로 붙여줍니다.</li>
+        <li>
+            주의할 점: text-overflow 속성을 지정하려면 요소박스의 너비가 고정값으로 지정되어야 하고 줄바꿈이 되지 않도록 
+            white-spce 속성값은 nowrap으로 지정해야 합니다.
+        </li>
+        
+    </ul>
+    <hr><br><br>
+    <div class="text-test">
+        <span>특정 범위를 넘어선 텍스트를 잘라서 없애준다 (overflow: hidden | text-overflow: clip)</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae esse dolorum, iusto ullam fuga sit. 
+        Modi vitae quisquam asperiores hic tempore consectetur quas animi odit adipisci? Enim voluptatibus ullam placeat 
+        libero facere molestias unde debitis id fugit. Expedita quaerat repellat commodi debitis ab temporibus, hic aliquam 
+        quisquam minima assumenda accusantium optio nobis officiis illum odio fugit officia? Rerum ipsam voluptatem rem 
+        voluptatibus quaerat odit adipisci, necessitatibus, in, ducimus numquam quod corrupti exercitationem accusantium 
+        maiores sint fugiat dolores modi quidem qui sapiente. Sapiente ea optio assumenda repellendus, dolores sunt facere 
+        explicabo iusto quibusdam repellat libero perferendis suscipit autem eos illo!</p>
+
+        <span>한줄로 쭈욱 늘어뜨린다 (white-space: nowrap) </span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae esse dolorum, iusto ullam fuga sit. 
+        Modi vitae quisquam asperiores hic tempore consectetur quas animi odit adipisci? Enim voluptatibus ullam placeat 
+        libero facere molestias unde debitis id fugit. Expedita quaerat repellat commodi debitis ab temporibus, hic aliquam 
+        quisquam minima assumenda accusantium optio nobis officiis illum odio fugit officia? Rerum ipsam voluptatem rem 
+        voluptatibus quaerat odit adipisci, necessitatibus, in, ducimus numquam quod corrupti exercitationem accusantium 
+        maiores sint fugiat dolores modi quidem qui sapiente. Sapiente ea optio assumenda repellendus, dolores sunt facere 
+        explicabo iusto quibusdam repellat libero perferendis suscipit autem eos illo!</p>
+
+        <span>텍스트가 지정된 영역을 벗어날 때, 잘린 부분을 말줄임표 (...) 로 표시해준다. (text-overflow: ellipsis)</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae esse dolorum, iusto ullam fuga sit. 
+        Modi vitae quisquam asperiores hic tempore consectetur quas animi odit adipisci? Enim voluptatibus ullam placeat 
+        libero facere molestias unde debitis id fugit. Expedita quaerat repellat commodi debitis ab temporibus, hic aliquam 
+        quisquam minima assumenda accusantium optio nobis officiis illum odio fugit officia? Rerum ipsam voluptatem rem 
+        voluptatibus quaerat odit adipisci, necessitatibus, in, ducimus numquam quod corrupti exercitationem accusantium 
+        maiores sint fugiat dolores modi quidem qui sapiente. Sapiente ea optio assumenda repellendus, dolores sunt facere 
+        explicabo iusto quibusdam repellat libero perferendis suscipit autem eos illo!</p>
+
+        <span>공백과 줄바꿈을 그대로 표시한다 (white-space: pre)
+        (다만, 자동줄바꿈이 안되기 떄문에 실무에서 잘 사용되지 않는다.)    
+        </span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laborum molestiae esse dolorum, iusto ullam fuga sit. 
+        Modi vitae quisquam asperiores hic tempore consectetur quas animi odit adipisci? Enim 
+        voluptatibus ullam placeat 
+        libero facere molestias unde debitis id fugit. Expedita quaerat repellat commodi debitis ab temporibus, hic aliquam 
+        quisquam minima assumenda accusantium optio nobis officiis illum odio fugit officia? Rerum ipsam voluptatem rem 
+        voluptatibus quaerat odit adipisci, necessitatibus, in, ducimus numquam quod corrupti exercitationem accusantium 
+        maiores sint fugiat dolores modi quidem qui sapiente. Sapiente ea optio assumenda repellendus, dolores sunt facere 
+        explicabo iusto quibusdam repellat libero perferendis suscipit autem eos illo!</p>
+
+        <span>공백과 줄바꿈을 그대로 표시한다 (white-space: pre)</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae esse dolorum, iusto ullam fuga sit. 
+        Modi vitae quisquam asperiores hic tempore consectetur quas animi odit adipisci? Enim 
+        
+        voluptatibus ullam placeat libero facere molestias unde debitis id fugit. Expedita quaerat repellat commodi debitis ab temporibus, hic aliquam 
+        quisquam minima   assumenda accusantium optio nobis officiis illum odio fugit officia? Rerum ipsam voluptatem rem 
+        voluptatibus quaerat odit adipisci, necessitatibus, in, ducimus numquam quod corrupti exercitationem accusantium 
+        maiores sint fugiat dolores modi      quidem qui sapiente. 
+        Sapiente ea optio assumenda 
+        repellendus, dolores sunt facere 
+        explicabo iusto quibusdam repellat libero perferendis suscipit autem eos illo!</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
