@@ -1,0 +1,35 @@
+.link1>a:hover {
+    font-size: 1.5em;
+}
+
+.link2>a:hover {
+    background-color: pink;
+}
+
+.list1 {
+    /* list-style-type: circle; */
+    /* list-style-type: square; */
+    list-style-image: url(../images/cycle.png);
+
+}
+
+.list2 {
+    list-style-type:lower-greek;
+}
+
+table, td, th {
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    border-spacing: 10px;
+    empty-cells: hide;
+}
+
+/* table {
+    border-collapse: collapse;
+} */
+
+th {
+    color: white;
+    background-color: green;
+    height: 30px;
+}
