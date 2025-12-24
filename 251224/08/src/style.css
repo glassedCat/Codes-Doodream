@@ -1,0 +1,119 @@
+
+.aniText
+{
+    width: 140px;
+    height: 120px;
+    padding: 10px;
+    background-color: #c00;
+    color: #fff;
+    animation: angusAni 5s infinite; 
+    overflow: hidden;
+}
+.anitext2
+{
+    width: 100px;
+    height: 180px;
+    padding: 20px;
+    background-color: lightpink;
+    color: yellow;
+    animation: angusAni2 7s 5;
+    overflow: hidden;
+}
+legend
+{
+    font-weight: bold;
+}
+.aniTest
+{
+    width: fit-content;
+    height: fit-content;
+    background-color: pink;
+    position: relative;
+    animation: movingbox 2.5s ease-in-out 10;
+}
+
+@keyframes angusAni
+{
+    0%
+    {
+        bacground-color: #c00;
+        width: 140px;height: 12px;
+    }
+    25%
+    {
+        background: #00c;
+        width: 450px; height: 120px;
+    }
+    50%
+    {
+        background: #808;
+        width: 450px; height: 180px;
+    }
+    75%
+    {
+        background: #080;
+        width: 140px; height: 180px;
+    }
+    100%
+    {
+        background: #c00;
+        width: 140px; height: 120px;
+    }
+}
+@keyframes angusAni2
+{
+    0%
+    {
+        background-color: lightpink;
+        width: 100px; heigth: 180px;
+        padding: 20px;
+    }
+    25%
+    {
+        background-color: rgb(253, 221, 226);
+        width: 250px; heigth: 320px;
+    }
+    50%
+    {
+        background-color: rgb(254, 161, 243);
+        width: 550px; heigth: 420px;
+    }
+    75%
+    {
+        background-color: rgb(158, 233, 252);
+        width: 300px; heigth: 700px;
+    }
+    100%
+    {
+        background-color: rgb(243, 80, 255);
+        width: 250px; heigth: 550px;
+    }
+    
+}
+@keyframes letsmovethisbox
+{
+
+}
+@keyframes movingbox
+{
+    0%
+    {
+        left: 0px; top: 0px;
+    }
+    25%
+    {
+        left: 150px; top: 0px;
+    }
+    50%
+    {
+        left: 300px; top: 0px;
+    }
+    75%
+    {
+        left: 150px; top: 0px;
+    }
+    100%
+    {
+        left: 0px; top: 0px;
+    }
+}

@@ -1,0 +1,22 @@
+.box
+{
+    border: 3px solid red;
+    width: 100px; height: 100px; 
+    box-sizing: border-box; 
+    /* 내가 정한 가로 너비에 border(테두리)와 
+    padding(내부 여백)을 다 포함시킨다*/
+    vertical-align: top;
+    float: left; /* 박스들 옆 여백을 없애주고*/
+}
+.clear
+{
+    clear: both; /* <br> 대신 clear:both를 줘서 줄바꿈*/
+    /* 
+    clear의 정의: 내 앞에 float된 요소가 있으면 
+    내려가겠다; left=왼쪽 요소가 있으면 내려감, 
+    right=오른쪽 요소가 있으면 내려감, both=
+    모든 float 요소가 있으면 내려감 
+    */
+}
+#wrapper
+{}

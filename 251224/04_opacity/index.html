@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="src/style.css">
+  <script>
+    function hide()
+    {
+        const target=document.getElementById("hidden");
+
+        if(target.style.opacity !== '0')
+        {
+            target.style.opacity = '0';
+        } 
+        else
+        {
+            target.style.opacity = '1';
+        }
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <p><p id="clear"></p>
+        <img src="src/img/01.jpg">
+    </p>
+    <p>
+        <img id="hidden" src="src/img/02.jpg" onclick="hide()">
+        <figcaption>이미지를 클릭하시면 온오프 토글 가능해요.</figcaption>
+    </p>
+    <p>
+        <img>
+    </p>
+    <p>
+        <img>
+    </p>
+  </div>
+</body>
+</html>

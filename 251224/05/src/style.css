@@ -1,0 +1,32 @@
+
+div>p img
+{
+    display: flex;
+    width: 60px; height: 60px;
+    border: 2px solid lightpink;
+}
+div>p
+{
+    margin-bottom: 25px;
+}
+div>p:nth-child(2) img
+{
+    transform: translate(15px, 12px);
+}
+div>p:nth-child(3) img
+{
+    transform: rotate(90deg);
+}
+div>p:nth-child(4) img
+{
+    margin-top: 30px;
+    transform: scale(1.8);
+}
+div>p:nth-child(5)
+{
+        margin-top: 5%;
+}
+div>p:nth-child(5) img
+{
+    transform: skew(21deg);
+}
