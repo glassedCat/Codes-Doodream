@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+ 
+  <h3>덧셈 계산기</h3>
+    <form name="calculator" action="#" method="post">
+      <input id="n1" type="text" placeholder="첫번째 값"><br>
+       +<br>
+      <input id="n2" type="text" placeholder="두번째 값"><br>
+      <input id="sum" type="text" placeholder="계산결과가 여기에 표시됩니다."><br>
+      <button onclick="calc()" type="button" style="width: 100px; height: 50px;">계산하기</button>
+    </form>
+    
+    <script>
+    function calc()
+    {
+      const n1=Number(document.getElementById('n1').value);
+      const n2=Number(document.getElementById('n2').value);
+      const sum=document.getElementById('sum');
+      var num = n1+n2;
+      sum.value = num; 
+    }
+  </script>
+</body>
+</html>

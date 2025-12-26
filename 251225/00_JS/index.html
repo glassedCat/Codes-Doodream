@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <h2>자바스크립트 변수 타입 이해하기 </h2>
+  <p>
+    <script src="src/script.js"></script>
+  </p>
+  <hr>
+  <p>개발자의 변수 중복선언 실수를 막기위해 let 변수타입을 도입함<br>
+  (var는 중복선언을 해도 문법오류가 뜨지 않지만, let은 뜸.)</p>
+  <script>
+    var oldtype_var = 10;
+    document.write("oldType_var 변수를 선언. var oldtype_var= "+oldtype_var +"<br>");
+    var oldtype_var = 20;
+    document.write("oldType_var 변수를 다시 선언. var oldtype_var= "+oldtype_var +"<br>");
+    document.write(">> var 중복 선언했더니 정상 저장 후 출력됨 (추후 문제발생 가능성 있음.))<br><br>")
+    let newtype_let =30;
+    document.write("newType_let 변수를 선언. let newtype_let= "+newtype_let +"<br>");
+    let newType_let = 25;
+    document.write("newType_let 변수를 다시 선언. let newtype_let= "+newtype_let +"<br>");
+    document.write(">> let 중복 선언했더니 오류 발생. (25를 다시 대입했으나 값이 저장되지 않았음)")
+  </script> 
+  <hr>
+  <h2>typeof: 자료형을 문자열로 변환</h2>
+  <script>
+    var type;
+    type=100;
+    document.write("변수 'type'의 값: "+type+", 변수 'type'의 자료형: "+typeof type+"<br>");
+    type="Hello World! UwU";
+    document.write("변수 'type'의 값: "+type+", 변수 'type'의 자료형: "+typeof type+"<br>");
+  </script> 
+</body>
+</html>

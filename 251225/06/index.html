@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>JS 논리연산 테스트</title>
+</head>
+<body>
+    <p class="text"></p>
+    <p class="text"></p>
+    <p class="text"></p>
+    <p class="text"></p>
+
+    <script>
+        const t = document.getElementsByClassName('text');
+        
+        var c = 
+        {
+          a:10, b:20, c:30, d:40
+        }
+        const data =
+        [
+          c.a>c.b || c.b>=c.c || c.c>c.d,
+          c.a>c.b || c.b>=c.c || c.c<=c.d,
+          c.a<=c.b && c.b>=c.c && c.c<=c.d,
+          c.a<=c.b && c.b<=c.c && c.c<=c.d
+        ]
+        for (let i=0;i<data.length; i++)
+            t[i].textContent = data[i]; // bool값이기 때문에 textContent를 data[i] 뒤에 붙이면 안된다.
+    </script>
+</body>
+</html>
