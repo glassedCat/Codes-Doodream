@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body id="bodyColor">
+  <h2>배경색 바꾸기</h2>
+  <button onclick="coloring()" style="height: fit-content; width: fit-content; cursor: pointer;">배경색 변경</button>
+  <script>
+    const bd=document.getElementById('bodyColor');
+    var colors=["blue","pink","purple","yellow"];
+    var i=0;
+    function coloring()
+    {
+       if(i>=colors.length)
+       {
+        i=0;
+       }
+  
+        bd.style.backgroundColor = colors[i];
+        i++;
+    }
+  </script>
+</body>
+</html>

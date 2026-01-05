@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블</title>
+</head>
+<body>
+    <h1>표 만들기</h1>
+    <h2>1행 1열 표 만들기</h2>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+        </tr>
+    </table>
+    <h2>1행 2열 표 만들기</h2>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+    </table>
+    <h2>2행 1열 표 만들기</h2>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+        </tr>
+    </table>
+    <h2>2행 2열 표 만들기</h2>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+        </tr>
+    </table>
+    <h2>2행 3열 표만들기</h2>
+    <p>1행1열과 2행 1열을 합치시오.</p>
+    <p>1행 2열과 1행 3열을 합치시오.</p>
+    <table border="1">
+        <tr>
+            <td rowspan="2">1행 1열</td>
+            <td colspan="2">1행 2열</td>
+        </tr>
+        <tr>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+    </table>
+    <h2>3행 4열 표를 만드시오.</h2>
+    <table border="1">
+        <caption>표의 제목입니다.</caption>
+        <thead>
+            <tr>
+                <th>1열</th>
+                <th>2열</th>
+                <th>3열</th>
+                <th>4열</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>요약</td>
+                <td colspan="3">3행 2열</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1행 1열</td>
+                <td rowspan="2">1행 2열</td>
+                <td>1행 3열</td>
+                <td>1행 4열</td>
+            </tr>
+            <tr>
+                <td>2행 1열</td>
+                <td>2행 3열</td>
+                <td>2행 4열</td>
+            </tr>
+        </tbody>   
+    </table>
+</body>
+</html>

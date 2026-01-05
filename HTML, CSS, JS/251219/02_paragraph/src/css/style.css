@@ -1,0 +1,55 @@
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.box span
+{
+    font-size: 1.2em;
+}
+#dialogue-mae-1
+{
+    text-align: left;
+}
+#dialogue-mae-2
+{
+    text-align: right;
+}
+#dialogue-mae-3
+{
+    text-align: center; 
+}
+#dialogue-mae-4
+{
+    text-align: justify; /* 양쪽 정렬, 자동으로 글사이의 간격을 미세하게 벌려줌. */
+}
+.contents
+{
+    margin-top: 0%;
+}
+.img-travel
+{
+    height: 200px;
+    width: 300px;
+}
+table
+{
+    width: 800px;
+    height: 800px;
+}
+table, td, th
+{
+    border: 2px solid black;
+}
+table td:nth-child(1)
+{
+    vertical-align: top;
+    text-align: center;
+}
+table td:nth-child(2)
+{
+    vertical-align: bottom;
+}

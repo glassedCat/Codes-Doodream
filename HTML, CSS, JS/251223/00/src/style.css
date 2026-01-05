@@ -1,0 +1,45 @@
+.test-1, .test-2, .bg-test p
+{
+    background-image: url('img/00.jpg');
+    background-size: 100px;
+    display: block;
+}
+
+.bg-test p
+{
+    display: inline-block;
+    
+    width: 500px; height: 500px;        
+}
+
+
+.bg-test p:nth-child(1)
+{
+    background-repeat: repeat;
+}
+.bg-test p:nth-child(3)
+{
+    background-repeat: no-repeat;
+}
+.bg-test p:nth-child(5)
+{
+    background-repeat: repeat-x;
+}
+.bg-test p:nth-child(7)
+{
+    background-repeat: repeat-y;
+}
+
+
+.test-1 p
+{
+    width: 500px; height: 700px; 
+    background-size: 250px;
+    background-attachment: fixed;
+    margin-bottom: 0; margin-top: 0;
+}
+
+.test-2>p:nth-child(2)
+{
+    background: lightpink url('img/00.jpg') repeat center / contain local;
+}

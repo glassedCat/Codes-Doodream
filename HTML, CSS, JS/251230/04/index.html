@@ -1,0 +1,74 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <div id="timer">       
+    </div>
+    <script>
+        function newYearDateLeft()
+        {
+            let nowDate=new Date();
+            let newYear=new Date('January 1, '+(nowDate.getFullYear()+1));
+            let dateLeft=newYear - nowDate;
+            dateLeft=dateLeft/1000; // 1000: 1,000 milliseconds >> 초 단위로 변환한다. (5521544124ms / 1000 >> 5,521,544초)
+            let SS=Math.floor(dateLeft%60); // dateLeft를 60으로 나누고 남은 나머지 값을 구한다
+            // (Math.floor() >> 숫자에서 소수점을 버리고 정수로 반환하는 함수
+            dateLeft=dateLeft/60; // 초 단위를 60으로 나눠서 분 단위로 바꾼다. (5,521,544초/60 >> 74,274분)
+            let MM=Math.floor(dateLeft%60); // 60으로 나눈뒤 남은 나머지값(정수)을 저장한다 (소수점을 버린다.)
+            dateLeft=dateLeft/60; // 분 단위를 60으로 나눠서 시간 단위로 바꾼다. (74,274분 / 60 >> 1,203시간)
+            let HH=Math.floor(dateLeft%60); // 마찬가지로 60으로 나눠서 시간단위로 바꾼 나머지(정수값)을 저장한다.
+            dateLeft=dateLeft/24; // >> 시 단위를 24시간으로 나눠서 일수 단위로 바꾼다. (1,203시간 >> 80일)
+            let DD=Math.floor(dateLeft);
+            var announcement='내년 신정까지 '+DD+'일 '+HH+'시간 '+MM;
+            announcement += '분, '+SS+'초 '+'남았습니다.';
+            document.getElementById('timer').innerHTML=announcement;
+            setTimeout("newYearDateLeft()", 1000); // >> 1초가 지나면 다시 함수를 호출함.
+        }
+        newYearDateLeft();
+        
+         
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <div id="timer">       
+    </div>
+    <script>
+        function newYearDateLeft()
+        {
+            let nowDate=new Date();
+            let newYear=new Date('January 1, '+(nowDate.getFullYear()+1));
+            let dateLeft=newYear - nowDate;
+            dateLeft=dateLeft/1000; // 1000: 1,000 milliseconds >> 초 단위로 변환한다. (5521544124ms / 1000 >> 5,521,544초)
+            let SS=Math.floor(dateLeft%60); // dateLeft를 60으로 나누고 남은 나머지 값을 구한다
+            // (Math.floor() >> 숫자에서 소수점을 버리고 정수로 반환하는 함수
+            dateLeft=dateLeft/60; // 초 단위를 60으로 나눠서 분 단위로 바꾼다. (5,521,544초/60 >> 74,274분)
+            let MM=Math.floor(dateLeft%60); // 60으로 나눈뒤 남은 나머지값(정수)을 저장한다 (소수점을 버린다.)
+            dateLeft=dateLeft/60; // 분 단위를 60으로 나눠서 시간 단위로 바꾼다. (74,274분 / 60 >> 1,203시간)
+            let HH=Math.floor(dateLeft%60); // 마찬가지로 60으로 나눠서 시간단위로 바꾼 나머지(정수값)을 저장한다.
+            dateLeft=dateLeft/24; // >> 시 단위를 24시간으로 나눠서 일수 단위로 바꾼다. (1,203시간 >> 80일)
+            let DD=Math.floor(dateLeft);
+            var announcement='내년 신정까지 '+DD+'일 '+HH+'시간 '+MM;
+            announcement += '분, '+SS+'초 '+'남았습니다.';
+            document.getElementById('timer').innerHTML=announcement;
+            setTimeout("newYearDateLeft()", 1000); // >> 1초가 지나면 다시 함수를 호출함.
+        }
+        newYearDateLeft();
+        
+         
+    </script>
+</body>
+>>>>>>> f6ea8c951c08b29341afeae87b5067ec93a31abe
+</html>

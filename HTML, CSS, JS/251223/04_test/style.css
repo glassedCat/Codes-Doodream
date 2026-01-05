@@ -1,0 +1,106 @@
+
+a, a:visited
+{
+    text-decoration: none;
+}
+.links>p:nth-child(1) a:link, 
+.links>p:nth-child(1) a:visited
+{
+    color: lightpink;
+}
+.links>p:nth-child(2) a, 
+.links>p:nth-child(2) a:visited
+{
+    color: lightblue;    
+}
+.links>p:nth-child(2) a:hover
+{
+    color: red;
+}
+.links>p:nth-child(2) a, 
+.links>p:nth-child(2) a:visited
+{
+    color: rgb(83, 207, 248);    
+}
+.links>p:nth-child(2) a:hover
+{
+    color: red;    
+}
+.links>p:nth-child(3) a, 
+.links>p:nth-child(3) a:visited
+{
+    color: green;
+}
+.links>p:nth-child(4) a
+{
+    font-weight: bold;
+}
+
+.links>p:nth-child(4) a:active 
+{
+    background-color: yellow;
+}
+.links>p:nth-child(4) a, a:visited
+{
+    color: lightgreen;
+}
+
+
+.table_size
+{
+    width: 500px;
+    height: 300px;
+}
+
+.table-1, .table-1 tr, .table-1 td, 
+.table-1 th
+{
+    border: 3px solid lightpink;
+    empty-cells: show;
+    /* empty-cells와 border-collapse는
+    같이 사용하면 안된다. 빈칸이 압축되서
+    표시되지 않는다.*/
+
+}
+.table-1
+{
+    border-collapse: collapse;
+    /* 두줄을 한줄 경계선으로 만들고 */
+    table-layout: fixed;
+    /* 셀 너비를 고정, 빈칸 형태 유지,*/
+    width: 100%;
+    /* 너비를 100%로 해서 최종적으로 빈칸이
+    전부 표시될 수 있게 해준다. */ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

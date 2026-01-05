@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>링크</title>
+</head>
+<body>
+    <p id="contents">
+        <a href="#link1">링크설명</a>&nbsp;&nbsp;
+        <a href="#link2">target 속성</a>&nbsp;&nbsp;
+        <a href="#link3">경로값(url)의 범위</a>
+    </p>
+    <hr>
+    <h2 id="link1">링크설명<a href="#contents">▲</a></h2>
+    <p>a태그 : 텍스트나 이미지를 통하여 다른 곳으로 정보를 연결해 주는 역할을 담당하는 요소입니다</p>
+    <p>a는 “anchor”의 약자이다.</p>
+    <p>사용자가 커서를 웹 페이지의 링크 위에 올리면 커서의 모양이 화살표에서 손 모양으로 변화한다.</p>
+    <p>링크 주소는 href속성으로 정의된다.</p>
+    <hr>
+    <h2 id="link2">target 속성<a href="#contents">▲</a></h2>
+    <p>"_blank" : 새로운 창으로 열립니다.</p>
+    <p>"_self" : 현재 윈도우에 새로운 페이지를 적재합니다. 기본값</p>
+    <p>예: <a href="http://www.naver.com" target="_blank">네이버</a></p>
+    <hr>
+    <h2 id="link3">경로값(url)의 범위<a href="#contents">▲</a></h2>
+    <p>절대경로 : 다른 웹 사이트의 페이지, http://www.naver.com</p>
+    <p>상대경로 : 웹 사이트 안에서의 다른 페이지, ./4 텍스트.html</p>
+    <p>내부파일 : 현재페이지 안의 다른 위치,id값으로 연결한다</p>
+    <p>상대경로의 예 : <a href="./4 텍스트.html">텍스트 페이지로 이동</a></p>
+</body>
+</html>

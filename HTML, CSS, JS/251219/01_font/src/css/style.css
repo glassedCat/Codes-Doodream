@@ -1,0 +1,111 @@
+/* 웹폰트 호출 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@font-face /* 로컬 임포트 */
+{
+    font-family: 'Nitw P1';
+    src: url('../font/nitwp1_regular.otf') format('opentype');
+}
+@font-face /* 링크로 불러오기 */
+{
+    font-family: 'Undertale Sans';
+    src: url('../font/Sans.otf') format('opentype');
+}
+@font-face /* 링크로 불러오기 */
+{
+    font-family: '8bit';
+    src: url('../font/8bitOperatorPlus8-Regular.ttf') format('truetype');
+}
+@font-face /* sans - alt */
+{
+    font-family: 'Undertale Sans';
+    src: url('https://cdn.jsdelivr.net/gh/StellaVulpis/Codes-Doodream@main/resource/font/pixel-comic-sans-undertale-sans-font.otf') 
+    format('opentype');
+    font-weight: regular;
+}
+body
+{
+    margin-bottom: 500px;
+
+}
+p 
+{
+    margin-bottom: 5px;
+}
+.font+p
+{
+    font-family: 휴먼매직체, 고딕;
+}
+.font-name
+{
+    font-weight: bold;
+}
+
+.font+p, .mae
+{
+    font-size: 1.5em;
+}
+.sans
+{
+    font-size: 0.8em;
+}
+.web-font
+{
+    font-size: 2em;
+}
+.mae
+{
+    font-family: 'Nitw P1', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.dialogue-sans-serious
+{
+    font-family: '8bit';
+    font-weight: bold;
+    font-size: 1.1em;
+}
+/* 웹폰트 사용하기 */
+.web-font>#nanumPen
+{
+    font-family: 'Nanum Pen Script', cursive;
+}
+.sans, .dialogue-box:not(.dialogue-sans-serious)
+{
+    font-family: 'Undertale Sans', sans-serif;
+    font-weight: regular;
+}
+.dialogue-box
+{
+    outline: 4px solid black;
+    border: 4px solid white;
+    background-color:black; 
+    color: white;
+    width: 600px;
+    height: 152px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
+.test-1
+{
+    width: fit-content;
+}
+.test-1>p:nth-child(3)>span
+{
+    background-color: yellow;
+    font-weight: bold;
+}
+.test-1>p:nth-child(5)
+{
+    font-style: italic;
+    background-color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.fontTest
+{
+    font: italic bold 30px '나눔 손글씨 붓', 궁서, 바탕체;
+}
+
+

@@ -1,0 +1,39 @@
+a, a:visited
+{
+    text-decoration: none;
+}
+li, a, a:visited
+{
+    color: #123456;
+}
+ul>li
+{
+    list-style: none;
+    width: 200px;
+    background: #abc;
+    /* background: border: 와 비슷; 여러가지 
+    요소들을 한번에 추가할 수 있다. */
+
+    line-height: 40px;
+    margin-left: 3%;
+    text-align: center;
+    margin-bottom: 0.8%;
+}
+ul>li:hover
+{
+    cursor: pointer;
+    width: 450px;
+    background: #ff0;
+}
+ul>li
+{
+    /* 
+    transition: 속성명 | 지속시간 
+    | 타이밍함수 | 대기시간 
+    */
+    transition: width 0.5s, color 0.5s, background 0.5s;
+}
+ul>li a:active
+{
+    background: rgb(188, 188, 8);
+}

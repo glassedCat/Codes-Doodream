@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <script>
+
+    // 논리연산자: ===, ==, !==, &&, ||, >, <
+        // double not(!!): 값을 뒤바꿔줌 (0>>1/1>>0)
+        // 삼항 연산자 ( 조건 ? true / false ): 참 거짓 상태를 뒤바꿔줌.
+        // 널 병합 연산자(??): 값이 없을때 대체값을 사용
+
+    var username = prompt("이름을 입력해줘!")
+    var age = Number(prompt("네 나이는? (owo)"));
+    var adultCheck = age>=19 ? 1 : 0;
+    var dailyWalkCount = Number(prompt("하루에 몇보씩 걷구있어?!"));
+    var num = Number(prompt("좋아하는 숫자는 머야? UwU"));
+    
+    document.write(username+"쨩, 만나서 반가웡! 어서와! (^>w<^)<br>");
+    switch(adultCheck)
+    {
+      case 0: document.write("넌 미성년자구나!<br>");
+      break;
+      case 1: document.write("넌 성인이구나!<br>");
+      break;
+      default: document.write("나이가 제대로 입력되지 않았어... ㅠ^ㅠ 다시 입력해줄래?!<br>");
+      break;
+    }
+    if(dailyWalkCount >= 10000)
+    {
+      document.write("헤헹, 하루에 만보 이상 걷구있구나!! 제법인뎅 Ow<<br>");
+    }
+    else if(dailyWalkCount < 10000)
+    {
+      document.write("으음... 걷는게 조금 부족한 것 같아..! 건강을 위해 조금 더 걸어봐두 되지 않을까? UwU<br>");
+    }
+    else
+    {
+      document.write("숫자가 제대로 입력되지 않았어! 다시 한번 확인해죠...<br>");
+    }
+    if(num%2==0)
+    {
+      document.write("우왕! "+username+"은 "+num+"을 좋아하는구나! UwU 짝수네! 나도 그 숫자 좋아해!<br>");
+    }
+    else if(num%2!==0)
+    {
+      document.write("우왕! "+username+"은 "+num+"을 좋아하는구나! UwU 홀수네! 나도 그 숫자 좋아해!<br>");
+    }
+    else
+    {
+      ocument.write("숫자가 제대로 입력되지 않았어! 다시 한번 확인해죠...<br>");
+    }
+
+
+    
+
+  </script>
+</body>
+</html>

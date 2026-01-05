@@ -1,0 +1,36 @@
+
+
+div
+{
+    width: 200px; height: 200px;
+    border: 3px solid pink;
+    margin-left: 10px;
+    float: left;
+    margin-bottom: 10px;
+}
+div:nth-child(1)
+{
+    overflow: scroll;
+}
+div:nth-child(2)
+{
+    overflow: hidden;
+}
+div:nth-child(3)
+{
+    overflow: auto;
+}
+div:nth-child(4)
+{
+    overflow:visible; /* 기본값 */
+}
+div:nth-child(5)
+{
+    overflow: scroll;
+}
+div:nth-child(5)>p
+{
+    width: 300px;
+    /* 바깥 크기보다 내부 요소 크기를
+    더 크게 만들면 가로 스크롤바가 나온다.*/
+}

@@ -1,0 +1,33 @@
+html
+{
+    border: 2px solid rgb(184, 184, 184);
+    margin-right: 0;
+    height: 380px;
+    width: 500px;
+}
+
+
+
+body
+{
+    margin-left: 200px;
+    margin-top: 5px;
+    height: 380px;
+    width: 500px;
+    background-position: left top;
+    background-image: url('src/image.jpg');
+    background-size: 500px 350px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.container
+{
+    display: block;
+    height: 270px;
+    width: 270px;
+    background-color: yellow;
+    text-align: left;
+    border: 3px dotted red;
+    padding: 2%;
+}

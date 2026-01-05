@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <script>
+    var player=
+    {
+        nickname:"SANNS", level:277, hp: 88383, mp: 123499
+    };
+    var text="";
+    for(x in player) // js의 for ...in 문법은 변수의 선언없이 실행이 가능하다.
+    {
+        text+=player[x]+"<br>"; 
+        /*
+        for x...in 문법은 객체 내부의 모든 내용물을 훑어올 수 있게 해준다.
+        var names = {name-1: "name1", name-2: "name2", name-3: "name3", name-4: "name4"};
+        var storage;
+        for(x in names)
+        {
+            storage+=names+" ";
+        }
+        document.write(storage);
+        */
+    }
+    document.write(text+"<br>");
+  </script>
+  <hr>
+  <h2>break와 continue</h2>
+  <p id="text"></p>
+  <script>
+    const pp = document.getElementById('text');
+    var num=0;
+    for(var i=0;i<5;i++)
+    {
+        num++;
+        document.write(i+"<br>");
+        //i=(i+1*3);
+        if(num%2==0) 
+        {
+            document.write("num: "+num+"<br>");
+            pp.textContent = "짝수이므로 반복을 중단합니다.\n";
+            break;
+        }
+        else
+        {
+            pp.textContent = "홀수이므로 반복을 계속 진행합니다.";
+            continue;
+        }
+
+    }
+  </script>
+</body>
+</html>

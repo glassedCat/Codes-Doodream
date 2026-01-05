@@ -1,0 +1,36 @@
+
+
+.box-1
+{
+    height: 200px; width: 200px;
+}
+.box-1>p:nth-child(1)
+{
+    border-style: groove;
+}
+.box-1>p:nth-child(2)
+{
+    border-style: solid;
+}
+.box-1>p:nth-child(3)
+{
+    border-style: outset;
+}
+.box-1>p:nth-child(4)
+{
+    border-style: inset;
+}
+.box-1>p:nth-child(5)
+{
+    border-style: dotted;
+    border-color: green;
+}
+.box-1>p:nth-child(6)
+{
+    border-style: double;
+    border-width: 6px;
+}
+.box-1>p:nth-child(7)
+{
+    border: solid 2px red;
+}

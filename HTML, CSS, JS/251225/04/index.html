@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <p class="text"></p>
+    <p class="text"></p>
+    <p class="text"></p>
+  <script>
+    function out()
+    {
+        const t=document.getElementsByClassName('text');
+        var result1="";
+        var result2="";
+        var data =
+        {
+            t1:"학교종이"+" ", 
+            t2:"땡땡땡 "+" ",
+            t3: 8282+" ",
+            t4: "어서 모이자"+" ",
+            t5: 9292+" " 
+        }  // 객체의 길이는 .length로 잴 수 없다
+        const texts = 
+        [
+            "문장 출력: ", data.t1, data.t2, data.t3, data.t4, data.t5
+        ]
+        // 논리연산자: ===, ==, !==, &&, ||, >, <
+        // double not(!!): 값을 뒤바꿔줌 (0>>1/1>>0)
+        // 삼항 연산자 ( 조건 ? true / false ): 참 거짓 상태를 뒤바꿔줌.
+        // 널 병합 연산자(??): 값이 없을때 대체값을 사용
+        for(let i=1;i<texts.length;i++)
+        {
+            if(i % 2 !== 0 && i !== 1)
+                {
+                    result2+=texts[i]+" ";
+                }
+            result1+=texts[i];      
+        }
+        t[0].textContent="출력 결과: \n";
+        t[1].textContent=result1+"\n";
+        t[2].textContent=result2+"\n";
+    }
+        out();
+  </script>
+</body>
+</html>

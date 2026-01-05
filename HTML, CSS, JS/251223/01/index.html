@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <h2>width와 height</h2>
+    <ul>
+        <li>요소의 너비와 높이를 지정하는 속성</li>
+        <li>여백을 포함하지 않은 크기로 px % em 등의 단위로 된 수치를 사용할수있다</li>
+        <li>인라인 요소에는 적용되지 않습니다</li>
+    </ul>
+    <div class="example-1">
+        <hr class="line-pink">
+        <span class="inline">인라인 요소 (span)</span>
+        <p class="block">블록 요소 (p)</p>
+        <hr class="line-pink">
+    </div>
+    <h2>min-width / max-width, min-height / max-height: 최소 및 최대 너비와 높이를 지정하는 속성입니다.</h2>
+    <div class="example-2">
+        <p>min-width를 150 적용</p>
+        <p>max-width를  300 적용</p>
+        <p>min-height를 200 적용</p>
+        <p>max-height를 300 적용</p>
+    </div>
+    <hr>
+    <h2>Padding: 안쪽 여백을 정의함, 상하좌우 설정가능</h2>
+    <div class="example-3">
+        <p>padding: 10px (상하좌우 10px)</p>
+        <p>padding: 10px 20px (상하 10px 좌우 20px)</p>
+        <p>padding: 10px 20px 30px (상 10 좌우 20 하 30)</p>
+        <p>padding: 10px 20px 30px 40px (상 10 우 20 하 30 좌 40)</p>
+    </div>
+    <hr>
+    <div class="example-4">
+        <p>상하 25 좌우 44</p>
+        <p>상 30 우 22 하 17 좌 32</p>
+        <p>상하좌우 30</p>
+        <p>상 28 좌우 22 하 15</p>
+    </div>
+    <hr>
+    <h2 class="title">마진 겹침 현상</h2>
+    <span>
+        (두개의 블록에 10px씩 총 20px가 나와야하나, 두개의 박스 마진이
+        겹쳐져서 실제론 10px만 출력되는 현상이다.)
+    </span><br>
+    <div class="block-1">블록요소 1</div>
+    <div class="block-1">블록요소 2</div>
+    <hr>
+    <h2>블록요소와 인라인 요소의 수평정렬</h2>
+    <p>
+        블록요소를 가운데 정렬하려면 왼쪽마진과 오른쪽 마진을 auto로 설정.<br>
+        이때 블록요소의 width값을 지정해 주어야함.
+    </p>
+    <div  class="block-2">블록요소 3</div>
+    </div>
+    
+</body>
+</html>

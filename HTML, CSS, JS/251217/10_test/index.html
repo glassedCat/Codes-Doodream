@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-10</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend class="title">HTML5 요소 데모 화면</legend>
+            <div>
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" class="inputBox">  
+            </div>
+            <div>
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="email" class="inputBox">  
+            </div>
+            <div>
+                <label for="url">사이트:</label>
+                <input type="url" id="url" name="website" class="inputBox">  
+            </div>
+            <div>
+                <label for="integer">정수:</label>
+                <input type="number" id="integer" name="integer" class="inputBox">  
+            </div>
+            <div>
+                <label for="slider">범위:</label>
+                <input type="range" id="slider" name="range" min="0" max="10" step="2" value="3"
+                class="inputBox"> 
+            </div>
+            <div>
+                <label for="msg">메세지:</label>
+                <textarea id="msg" name="msg" required
+                class="inputBox"></textarea>  
+            </div>
+        </fieldset>
+        <div class="submit-wrapper">
+            <input type="submit" value="전송" id="submit">
+        </div>
+    </form>
+</body>
+</html>

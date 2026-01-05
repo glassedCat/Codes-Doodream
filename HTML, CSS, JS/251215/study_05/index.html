@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크</title>
+    <style>
+        #start:target /* target: 내부 링크를 선택했을 때의 조건 기능 */
+        {
+            padding: none;
+            background-color: none;
+        }
+        .content:target
+        {
+            padding: 12px;
+            font-weight: bold;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <p id="start">
+        <a href="#div_link1">div 1로 가기</a>&nbsp;&nbsp;
+        <a href="#div_link2">div 2로 가기</a>&nbsp;&nbsp;
+        <a href="#div_link3">div 3으로 가기</a>&nbsp;&nbsp;
+        <a href="#start">링크 강조 선택 초기화</a>&nbsp;&nbsp;
+        <h2>링크설명 ▲</h2>
+    </p>
+    <div id="div_link1" class="content">
+        <code>
+            &lt;a href="https://www.exampleweb.com"&gt;&lt;/a&gt;
+        </code>
+        <br>
+        <ul>
+            <li><a href="https://pixiv.net/" target="_blank">예제 링크 (_blank)</a></li>
+            <li><a href="https://inkbunny.net" target="_self">예제 링크 (_self)</a></li>
+        </ul>
+        <a href="#div_link1">div 1로 가기</a>&nbsp;&nbsp;
+        <a href="#div_link2">div 2로 가기</a>&nbsp;&nbsp;
+        <a href="#div_link3">div 3으로 가기</a>&nbsp;&nbsp;
+        <a href="#start">최상단으로 돌아가기</a>&nbsp;&nbsp;
+    </div>
+    <hr>
+    <div id="div_link2" class="content">
+        <h2>기본 태그 정의:</h2>
+        <p>a태그: 텍스트나 이미지를 통하여 다른 곳으로 정보를 연결해주는 역할을 담당하는 요소입니다.</p>
+        <p>a는 "anchor의 약자이다.</p>
+        <p>사용자가 커서를 웹 페이지의 링크 위에 올리면 커서의 모양이 화살표에서 손 모양으로 변환된다. (curser:pointer) </p>
+        <p>링크 주소는 href 속성으로 정의된다.</p>
+         <a href="#div_link1">div 1로 가기</a>&nbsp;&nbsp;
+        <a href="#div_link2">div 2로 가기</a>&nbsp;&nbsp;
+        <a href="#div_link3">div 3으로 가기</a>&nbsp;&nbsp;
+        <a href="#start">최상단으로 돌아가기</a>&nbsp;&nbsp;
+    </div>
+    <div>
+        <h2>target 속성</h2>
+        <p>"_blank": 새 탭 열기</p>
+        <p>"_self": 현재 윈도우에 새로운 페이지를 적재합니다. (redirect)</p>
+        <a href="#div_link1">div 1로 가기</a>&nbsp;&nbsp;
+        <a href="#div_link2">div 2로 가기</a>&nbsp;&nbsp;
+        <a href="#div_link3">div 3으로 가기</a>&nbsp;&nbsp;
+        <a href="#start">최상단으로 돌아가기</a>&nbsp;&nbsp;
+    </div>
+    <hr>
+    <div id="div_link3" class="content">
+        <h2>경로(url)값의 범위</h2>
+        <ul>
+            <li>절대경로 (웹): 다른 웹 사이트의 페이지 (예: <a href="https://www.google.com">https://www.google.com)</a></li>
+            <li>상대경로 (로컬): 웹 사이트 안에서의 다른 페이지 (예: .4, .html)</a></li>
+            <li>내부경로 (페이지 안에서 이동): 현재페이지 안의 다른 위치 & id값으로 된 주소 (예: <a href="#start">"본문"</a> <a href="#div_link1">"페이지 1"</a> 
+                <a href="#div_link2">"페이지 2"</a> "<a href="#div_link3">"페이지 3")</a></li>
+        </ul>
+        <a href="#div_link1">div 1로 가기</a>&nbsp;&nbsp;
+        <a href="#div_link2">div 2로 가기</a>&nbsp;&nbsp;
+        <a href="#div_link3">div 3으로 가기</a>&nbsp;&nbsp;
+        <a href="#start">최상단으로 돌아가기</a>&nbsp;&nbsp;
+    </div>
+</body>
+</html>

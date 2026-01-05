@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <h2>Current Time (UTC)</h2>
+    <h3 id="clock"></h3>
+    <p id="errorMsg"></p>
+    <script>
+       
+        function digital_clock()
+        {
+        const clk=document.getElementById('clock');
+        const err=document.getElementById('errorMsg');
+        let time = new Date();
+        let Y=time.getUTCFullYear();
+        let M=time.getUTCMonth()+1;
+        let D=time.getUTCDate();
+        let h=(time.getUTCHours())+12;
+        let m=time.getUTCMinutes();
+        let s=time.getUTCSeconds();
+         let oddColors = ['orange','blue', 'red'];
+        let evenColors = ['pink','purple','green'];
+        let colorIndex=s%3; // 0, 1, 2 반복
+        clk.innerHTML=Y+"-0"+M+"-0"+D+", "+h+":"+m+":"+s;
+        try
+        {
+            if(s%2==1)
+            {
+                for(let i=0;i<oddColors.length;i++) 
+                {
+
+                        document.body.style.backgroundColor=oddColors[colorIndex];           
+                }
+                throw "홀수 초 이므로 주황/파랑/빨강 색을 순차적으로 적용합니다.";
+            }
+            else
+            {
+                for (let i=0; i<evenColors.length;i++) 
+                {
+                    document.body.style.backgroundColor=evenColors[colorIndex];
+                }
+                throw "짝수 초 이므로 분홍/보라/초록 색을 순차적으로 적용합니다.";
+            }
+        }catch (e)
+        {
+            err.innerHTML=e;
+        }
+        setTimeout (digital_clock, 1000);
+        }
+        digital_clock();
+
+    </script>
+</body>
+</html>

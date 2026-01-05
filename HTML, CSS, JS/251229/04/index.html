@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <h2>do_while 문</h2>
+  <p style="overflow-wrap: break-word; width: 500px;">
+    while 문은 조건식을 먼저 검사하여 실행 여부를 결정하지만, do-while 문은 실행문을 
+    최소 한 번은 무조건 실행한 후 조건식을 검사합니다. 따라서 while 문은 조건이 맞지 
+    않으면 한 번도 실행되지 않을 수 있는 반면, do-while 문은 조건의 참/거짓 여부와 
+    상관없이 첫 번째 실행은 반드시 보장됩니다.
+  </p>
+  <script>
+    let i=0;
+    document.write("이 do_while 문은 조건이 참이라 5번을 전부 실행한다.<br>")
+    document.write("5번 중 <br>")
+    do
+    {
+        document.write(i+"번 실행<br>");
+        i++;
+    }while(i<5)
+    document.write("<hr style='border: dotted 2px black;'>");
+    document.write("이 do_while 문은 조건이 거짓이라 한번을 일단 실행후 반복을 중단한다.");
+    let t=0;
+    document.write("3번 중<br>")
+    do
+    {
+        document.write(t+'번 실행<br>');
+        t++;
+    }while(t>5)
+  </script>
+</body>
+</html>

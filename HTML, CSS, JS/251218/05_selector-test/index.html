@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-image: url('https://images.steamusercontent.com/ugc/942843106667302789/6C8DED6894CD6B8F25ECA198008568022CC9D086/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false')
+        }
+        h1, h1+p, .info, li::marker
+        {
+            color: white;
+        }
+        #A>.title
+        {
+            font-family:Arial, Helvetica, sans-serif;
+            color: #17c6e6;
+        }
+        #orangeBG
+        {
+            background-color: orange;
+            width: fit-content;
+        }
+        ul>#A>.title
+        {
+            color: #4ccc4c;
+        }
+        ul>#B>.title
+        {
+            color: #ffbafc;
+        }
+        ul>#C>.title
+        {
+            COLOR: #7a95e0;
+        }
+        #container
+        {
+            width: 900px;
+        }
+        h1+p>span
+        {
+            font-weight: bold;
+            color: red;
+        }
+        .title
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">건강해지는 차</h1>
+    <p>
+        머리와 피부에 좋은 차는 어떤 것들일까. 차의 종류에 대해 알아보도록 합시다.&nbsp;&nbsp;||&nbsp;&nbsp;
+        <span>h1>p>span의 텍스트</span>
+    </p>
+    <div>
+        <ul>
+            <li class="list" id="A"><p class="title">대나무차 / 15,000원</p>
+                <p id="orangeBG" class="info">얼굴에 물을 주는 효과가 있다.</p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li class="list" id="B"><p class="title">감잎차 / 14,000원</p>
+                <p class="info">빈혈이 있는 사람에게 효과가 있다.</p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul id="container">
+            <li class="list" id="C"><p class="title">결명자차 / 20,000원</p>
+                <p id="d" class="info">눈을 밝혀주는 효과가 있다.<br>
+                보리차와 비슷하나 맛이 더 은은하고 구수하며 불그스름하다.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

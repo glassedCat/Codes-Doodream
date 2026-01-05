@@ -1,0 +1,142 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <script>
+    var a1 = new Date(2025, 11, 30, 0, 0, 0); // 월 인수는 0부터 시작함, 하나 빼고 넣어야 한다.
+    var a2 = new Date("January 20, 2022 11:13:00");
+    document.write(a1+"<br>");
+    document.write(a2);
+  </script>
+  <hr>
+  <script>
+    var date = new Date();
+    document.write(date.toDateString()+"<br>");
+    document.write(date.toISOString()+"<br>");
+    document.write(date.toJSON()+"<br>");
+    document.write(date.toLocaleDateString()+"<br>");
+    document.write(date.toLocaleTimeString()+"<br>");
+    document.write(date.toLocaleString()+"<br>");
+    document.write(date.toString()+"<br>");
+    document.write(date.toTimeString()+"<br>");
+    document.write(date.toUTCString()+"<br>");
+  </script>
+  <hr>
+  <script>
+    var today=new Date();
+    var year=today.getFullYear();
+    var month=(today.getMonth()+1);
+    var day=today.getDate();
+    var HH=today.getHours();
+    var MM=today.getMinutes();
+    var SS=today.getSeconds();
+    var MSPassed=today.getTime();
+    document.write("UTC 1970년 1월 1일부터 지금까지 흐른 밀리초: "+MSPassed+"초<br>")
+    document.write("현재 날짜 시간 정보: "+today+"<br><hr>");
+    document.write(year+"년 "+month+"월 "+day+"일 "+HH+"시 "+MM+"분 "+SS+"초"+"<br>")
+  </script>
+  <hr>
+  <script>
+    var dateTime=new Date();
+    switch(dateTime.getDay()) // 화요일 >> 2
+    {
+        case 0:
+            document.write("일요일");
+            break;
+        case 1:
+            document.write("월요일");
+            break;
+        case 2:
+            document.write("화요일");
+            break;
+        case 3:
+            document.write("수요일");
+            break;
+        case 4:
+            document.write("목요일");
+            break;
+        case 5:
+            document.write("금요일");
+            break;
+        default:
+            document.write("토요일");
+    }
+  </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <script>
+    var a1 = new Date(2025, 11, 30, 0, 0, 0); // 월 인수는 0부터 시작함, 하나 빼고 넣어야 한다.
+    var a2 = new Date("January 20, 2022 11:13:00");
+    document.write(a1+"<br>");
+    document.write(a2);
+  </script>
+  <hr>
+  <script>
+    var date = new Date();
+    document.write(date.toDateString()+"<br>");
+    document.write(date.toISOString()+"<br>");
+    document.write(date.toJSON()+"<br>");
+    document.write(date.toLocaleDateString()+"<br>");
+    document.write(date.toLocaleTimeString()+"<br>");
+    document.write(date.toLocaleString()+"<br>");
+    document.write(date.toString()+"<br>");
+    document.write(date.toTimeString()+"<br>");
+    document.write(date.toUTCString()+"<br>");
+  </script>
+  <hr>
+  <script>
+    var today=new Date();
+    var year=today.getFullYear();
+    var month=(today.getMonth()+1);
+    var day=today.getDate();
+    var HH=today.getHours();
+    var MM=today.getMinutes();
+    var SS=today.getSeconds();
+    var MSPassed=today.getTime();
+    document.write("UTC 1970년 1월 1일부터 지금까지 흐른 밀리초: "+MSPassed+"초<br>")
+    document.write("현재 날짜 시간 정보: "+today+"<br><hr>");
+    document.write(year+"년 "+month+"월 "+day+"일 "+HH+"시 "+MM+"분 "+SS+"초"+"<br>")
+  </script>
+  <hr>
+  <script>
+    var dateTime=new Date();
+    switch(dateTime.getDay()) // 화요일 >> 2
+    {
+        case 0:
+            document.write("일요일");
+            break;
+        case 1:
+            document.write("월요일");
+            break;
+        case 2:
+            document.write("화요일");
+            break;
+        case 3:
+            document.write("수요일");
+            break;
+        case 4:
+            document.write("목요일");
+            break;
+        case 5:
+            document.write("금요일");
+            break;
+        default:
+            document.write("토요일");
+    }
+  </script>
+</body>
+>>>>>>> f6ea8c951c08b29341afeae87b5067ec93a31abe
+</html>

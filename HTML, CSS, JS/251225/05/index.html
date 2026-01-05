@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <p class="text">
+        텍스트 컨텐트(.textContent = "")의 진짜 참된 역할은,
+        html 내부 텍스트를 바꿔주는 것이다. 아래 버튼을 클릭해서
+        이 문장 텍스트를 바꾸어보자.
+    </p>
+    <button id="btn" height="100px" width="200px">텍스트 바꾸기</button>
+    <script>
+      const t=document.getElementsByClassName('text');
+       function clickMe()
+       {
+            //textContent를 출력뿐 아니라 저장용으로도 사용가능
+            var originalText = t[0].textContent;
+            var changedText = "글자가 바뀌었어요! UwU\n";
+
+            const b = document.getElementById('btn');
+            b.addEventListener
+            ('click', function() 
+                {
+                    if(t[0].textContent === originalText)
+                    {
+                        function textChanger()
+                        {
+                            t[0].textContent = changedText;
+                        } 
+                        textChanger();
+                    }
+                    else
+                    {
+                       t[0].textContent = originalText; 
+                    }
+                }
+            )
+       }
+       clickMe();
+    </script>
+
+</body>
+</html>

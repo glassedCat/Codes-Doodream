@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of button usage</title>
+    <script src="src/script.js"></script>
+</head>
+<body>
+    <form action="#"> <!-- #: 전송될 목적지 url을 정의함. -->
+        <p><b>Price of the merchant : </b>
+            <input type="text" name="price" placeholder="Price" id="price"> $ + 
+            <input type="text" name="units" placeholder="Units" id="units"> Units
+            <span>&nbsp;
+            <input type="button" value="Calculate" onclick="calc()">
+        </span>
+        </p>
+        <b>
+        <hr>Result: 
+        <span id="result">Waiting on the calculation result...</span>
+        </b><br>
+    </form>
+</body>
+</html>

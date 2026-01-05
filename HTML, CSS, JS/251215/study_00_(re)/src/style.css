@@ -1,0 +1,84 @@
+body
+{
+    background-color: #fcdef1;
+    color: #6a31b0;
+}
+.box /* div */
+{
+    padding:20px;
+    border: solid 1.8px #a18d9a;
+    margin:0px;
+    background-color: #e8ccde;
+    padding: 15px; /* div 박스 내부 공간 크기*/
+    margin-bottom: 10px; /* div 박스와 박스들의 간격 (아래쪽 마진) */
+    border-radius: 8px;
+}
+.no_bullet
+{
+    list-style: none;
+}
+.no_margin
+{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.fin
+{
+    font-style: italic;
+    font-weight: bold;
+}
+.noList
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.hidden
+{
+    display: none;
+}
+.hButton
+{
+    padding: 8px 25px;
+    background-color: #fab8ef;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.hButton:hover
+{
+    background-color:  #f56ede;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

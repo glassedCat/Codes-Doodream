@@ -1,0 +1,109 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <script>
+        document.write("50 70 90의 최대값과 최소값을 구하시오"+"<br>");
+        let max=Math.max(50, 70, 90);
+        let min=Math.min(50, 70, 90);
+        document.write("최댓값: "+max+"<br>");
+        document.write("최소값: "+min+"<br>");
+    </script>
+    <hr>
+    <script>
+      document.write("-7의 절대값을 구하시오<br>");
+      let abNum=Math.abs(-7);
+      let ranNum=Math.random();
+      document.write("절대값: "+abNum+"<br>");
+      document.write("난수: "+ranNum+"<br>"); // 0.1~0.9 까지의 난수 생성
+    </script>
+    <hr>
+    <h2>Math 객체</h2>
+    <button type="button" onclick="changeNum()" style="width: fit-content; cursor: pointer">숫자 변경</button>
+    <div id="ranNums"></div>
+    <script>
+      function changeNum()
+      {
+        let ranNum_1=Math.floor(Math.random()*10);
+        let ranNum_2=Math.floor(Math.random()*100);
+        let ranNum_3=Math.floor(Math.random()*1000);
+        document.getElementById('ranNums').textContent="1자리 난수: "+ranNum_1+"\n10자리 난수: "+ranNum_2+"\n100자리 난수: "+ranNum_3+"\n";
+      }
+    </script>
+    <hr>
+    <h2>버튼 클릭 시 이미지가 랜덤으로 변경되게 해보자</h2>
+    <hr style="border: dotted 2px lightpink;">
+    <img id="sanns" src="src/img/1.PNG" alt="player image" style="width:250px; height: 250px;">
+    <button type="button" onclick="imageChanger()" style="height:fit-content; width:fit-content; cursor:pointer;">이미지 변경</button>
+    <hr style="border: dotted 2px lightpink;">
+    <script>
+      function imageChanger()
+      {
+    
+        let ranNum_img=Math.floor(Math.random()*6)+1 // 이미지 갯수만큼 1~4 만큼의 난수를 생성
+        let source="src/img/"+ranNum_img+".PNG";
+        document.getElementById('sanns').src=source; //.src >> 파일 불러오는 속성
+      }
+    </script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <script>
+        document.write("50 70 90의 최대값과 최소값을 구하시오"+"<br>");
+        let max=Math.max(50, 70, 90);
+        let min=Math.min(50, 70, 90);
+        document.write("최댓값: "+max+"<br>");
+        document.write("최소값: "+min+"<br>");
+    </script>
+    <hr>
+    <script>
+      document.write("-7의 절대값을 구하시오<br>");
+      let abNum=Math.abs(-7);
+      let ranNum=Math.random();
+      document.write("절대값: "+abNum+"<br>");
+      document.write("난수: "+ranNum+"<br>"); // 0.1~0.9 까지의 난수 생성
+    </script>
+    <hr>
+    <h2>Math 객체</h2>
+    <button type="button" onclick="changeNum()" style="width: fit-content; cursor: pointer">숫자 변경</button>
+    <div id="ranNums"></div>
+    <script>
+      function changeNum()
+      {
+        let ranNum_1=Math.floor(Math.random()*10);
+        let ranNum_2=Math.floor(Math.random()*100);
+        let ranNum_3=Math.floor(Math.random()*1000);
+        document.getElementById('ranNums').textContent="1자리 난수: "+ranNum_1+"\n10자리 난수: "+ranNum_2+"\n100자리 난수: "+ranNum_3+"\n";
+      }
+    </script>
+    <hr>
+    <h2>버튼 클릭 시 이미지가 랜덤으로 변경되게 해보자</h2>
+    <hr style="border: dotted 2px lightpink;">
+    <img id="sanns" src="src/img/1.PNG" alt="player image" style="width:250px; height: 250px;">
+    <button type="button" onclick="imageChanger()" style="height:fit-content; width:fit-content; cursor:pointer;">이미지 변경</button>
+    <hr style="border: dotted 2px lightpink;">
+    <script>
+      function imageChanger()
+      {
+    
+        let ranNum_img=Math.floor(Math.random()*6)+1 // 이미지 갯수만큼 1~4 만큼의 난수를 생성
+        let source="src/img/"+ranNum_img+".PNG";
+        document.getElementById('sanns').src=source; //.src >> 파일 불러오는 속성
+      }
+    </script>
+</body>
+</html>
+>>>>>>> f6ea8c951c08b29341afeae87b5067ec93a31abe

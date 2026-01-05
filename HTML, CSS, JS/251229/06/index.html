@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <h2>배열</h2>
+  <script>
+
+    // 배열(array): name=[1, 2, 3, 4];
+    // 객체(object): name={a:1, b:2, c:3, d:4};
+
+    var names=
+    [
+        "sanns", "jordan", "azu", "jerry"
+    ]; // .length 사용가능 (배열)
+    for(let i=0;i<names.length; i++)
+    {
+        document.write(names[i]+"<br>");
+    }
+    document.write("<hr>");
+    var storage = 
+    {
+        name1:"sanns", name2:"jordan", name3:"azu", name4:"jerry" 
+    };
+    // .length 사용불가 (객체)
+    var keys=Object.entries(storage); // 배열로 객체의 내용물들을 한번에 이동
+    // >> 이름표/값 둘다 추출해서 저장
+
+    // var values=Object.keys(storage); >> 이름표만 추출 후 저장
+    // var values=Object.values(storage); >> 값만 추출 후 저장
+    // var entries=Object.entries(storage); >> 이름표/값 둘 다 추출 후 저장
+    var myArray = new Array();
+    myArray['a']="name 1";
+    myArray['b']="name 2";
+    myArray['c']="name 3";
+    document.write(myArray['a']+"<br>"+myArray['b']+"<br>"+myArray['c']);
+    document.write("<hr>");
+    var arr = new Array(5, 10, 15, 20, 25);
+    for(let i=0;i<arr.length;i++)
+    {
+        document.write(arr[i]+"<br>");
+    }
+        document.write("<hr>");
+  </script>
+</body>
+</html>

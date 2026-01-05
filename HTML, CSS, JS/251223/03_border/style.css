@@ -1,0 +1,51 @@
+
+.box li
+{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid red;
+    font-size: 12px;
+    display: inline-block; /* 블록의 속성을 가지면서 한줄로 표시 */
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.box2 p
+{
+    width: 150px; height: 150px;
+    vertical-align: top;
+    display: inline-block;
+    border: 2px solid blue;
+}
+.box2>p:nth-child(1)
+{
+    box-shadow: 5px 8px 15px lightpink;
+}
+.box2>p:nth-child(2)
+{
+    box-shadow: 10px 10px 15px blue;
+}
+
+.box-sizing, #box-sizing-1, #box-sizing-2
+{
+    height: 200px; width: 200px;
+    padding: 10px;
+    margin: 20px;
+}
+.box-sizing
+{
+    box-sizing: border-box;
+    border: 5px solid blue;
+}
+#box-sizing-1
+{
+    border: 5px solid red;
+}
+#box-sizing-2
+{
+    border: 5px solid green;
+    margin: 20px;
+    box-sizing: border-box;
+}

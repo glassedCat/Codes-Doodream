@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <h2>매개변수가 있는 함수정의문</h2>
+  <p>
+    매개변수가 있는 함수 정의문은 함수를 호출할 때 전달 값을 입력하여
+    호출할 수 있습니다. 이렇게 전달된 값은 매개변수가 받아 함수 정의문 내에
+    일련의 실행문에 사용할 수 있게된다. 
+  </p>
+  <p>
+    데이터와 매개변수는 선언된 순서대로 매칭된다. 즉 첫 번째 매개변수는 첫 번째 데이터의 값을 전달받는다.
+  </p>
+  <button onclick="greeting('jerry', 'azu')">
+    welcome!
+  </button>
+  <script>
+    function greeting(name, position)
+    {
+       alert(name+' '+ position+" 님을 환영합니다.");
+    }
+  </script>
+</body>
+</html>

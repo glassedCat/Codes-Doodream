@@ -1,0 +1,31 @@
+#one {
+	background-color: cyan;
+	width: 200px;
+	height: 50px;
+}
+
+#container {
+    position: relative;
+    background-color: blueviolet;
+    width: 500px;
+    height: 50px;
+}
+#two {
+	position:absolute;
+    left: 30px;
+    top:30px;
+	background-color: yellow;
+	width: 200px;
+	height: 50px;
+}
+#three {
+	background-color: lightgreen;
+	width: 200px;
+	height: 50px;
+}
+
+.four {
+    width: 200px;
+    height: 50px;
+    background-color: cornflowerblue;
+}

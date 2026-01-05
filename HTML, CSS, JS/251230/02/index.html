@@ -1,0 +1,86 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <script>
+    var time = new Date();
+    time.setFullYear(1970);
+    time.setMonth(6);
+    time.setDate(25);
+    var setYY=time.getFullYear();
+    var setMM=time.getMonth();
+    var setDD=time.getDate();
+    // time에 set함수를 쓰고(변수 선언없이) 그 다음 get함수로 불러와야 내가 설정한 값이 출력된다.
+    document.write("<b>내가 설정한 날짜: </b>"+setYY+"년 "+setMM+"월 "+setDD+"일 "+"<br>");
+  </script>
+  <hr>
+  <input type="date" id="calender">
+  <button onclick="checkDate()" style="width:fit-content; cursor: pointer;">구입 날짜 선택</button>
+  <script>
+    function checkDate()
+    {
+        const selected=document.getElementById('calender').value;
+        let pDate=new Date(selected);
+        let today=new Date();
+        let calc=today.getTime()-pDate.getTime(); // 총 지난 날짜(밀리초) || 총 지난 날짜를 밀리초단위로 구해낸 후,
+        let dayPassed=Math.floor(calc / (1000*60*60*24)); // 그 구해낸 총 밀리초를 1초(1000), 1분(60), 1시간(60), 24시간 으로 나눠서 일수단위로 변환.
+        if(dayPassed > 30)
+            alert("교환/반품 가능 기간이 지났습니다.");
+        else
+            alert("교환/반품 신청 가능합니다.");
+    }
+  </script>
+  <hr>
+  <script>
+
+  </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <script>
+    var time = new Date();
+    time.setFullYear(1970);
+    time.setMonth(6);
+    time.setDate(25);
+    var setYY=time.getFullYear();
+    var setMM=time.getMonth();
+    var setDD=time.getDate();
+    // time에 set함수를 쓰고(변수 선언없이) 그 다음 get함수로 불러와야 내가 설정한 값이 출력된다.
+    document.write("<b>내가 설정한 날짜: </b>"+setYY+"년 "+setMM+"월 "+setDD+"일 "+"<br>");
+  </script>
+  <hr>
+  <input type="date" id="calender">
+  <button onclick="checkDate()" style="width:fit-content; cursor: pointer;">구입 날짜 선택</button>
+  <script>
+    function checkDate()
+    {
+        const selected=document.getElementById('calender').value;
+        let pDate=new Date(selected);
+        let today=new Date();
+        let calc=today.getTime()-pDate.getTime(); // 총 지난 날짜(밀리초) || 총 지난 날짜를 밀리초단위로 구해낸 후,
+        let dayPassed=Math.floor(calc / (1000*60*60*24)); // 그 구해낸 총 밀리초를 1초(1000), 1분(60), 1시간(60), 24시간 으로 나눠서 일수단위로 변환.
+        if(dayPassed > 30)
+            alert("교환/반품 가능 기간이 지났습니다.");
+        else
+            alert("교환/반품 신청 가능합니다.");
+    }
+  </script>
+  <hr>
+  <script>
+
+  </script>
+</body>
+>>>>>>> f6ea8c951c08b29341afeae87b5067ec93a31abe
+</html>

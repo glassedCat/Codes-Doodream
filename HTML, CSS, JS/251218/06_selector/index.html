@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <h1 class="type">속성 선택자</h1>
+    <h2 class="seoul">서울특별시</h2>
+    <p>주소록을 작성합니다.</p>
+    <h2 title="경기도">경기도</h2> <!-- 마우스 호버 시 title 내부에 적힌 글자가 작게 표시됨 -->
+    <p title="전화번호부">전화번호부</p>
+    <h2>가상 클래스 선택자</h2>
+        <div>
+            <h3>선택자 속성 리스트</h3>
+            <table>
+                <tr>
+                    <th id="th1">속성</th><th id="th2">풀이</th>
+                </tr>
+                <tr>
+                    <td>:first-letter</td><td>요소의 첫 글자</td>
+                </tr>
+                <tr>
+                    <td>:first-line</td><td>요소의 첫 줄</td>
+                </tr>
+                <tr>
+                    <td>:first-child</td><td>같은 요소 중 첫 번째 요소</td>
+                </tr>
+                <tr>
+                    <td>:last child</td><td>같은 요소 중 마지막 요소</td>
+                </tr>
+                <tr>
+                    <td>:before</td><td>요소의 맨 앞에 배치하는 마크업에는 없는 가상 요소</td>
+                </tr>
+                <tr>
+                    <td>:after</td><td>요소의 맨 뒤에 배치하는 마크업에는 없는 가상 요소</td>
+                </tr>
+            </table>
+        </div>
+        <ul>
+            <li>
+                <a class="url" href="https://stellavulpis.github.io">My Git Page</a>
+            </li>
+            <li>
+                <a class="url" id="nitw" href="http://www.nightinthewoods.com/">Nights In The Woods Official</a>
+            </li>
+            <li>
+                <a class="url_alt" href="https://google.com/">Google</a>
+            </li>
+            <li>
+                <a class="url_alt" href="https://Github.com">Github</a>
+            </li>
+        </ul>
+        <hr>
+        <h2>가상 요소 클래스 선택자 (Pseudo-element) </h2>
+        <div class="box"> 
+            <p>COMPANY</p>
+            <p>PRODUCT</p>
+            <p>SERVICE</p>
+        </div>
+        <hr>
+        <h2>종속 선택자</h2>
+        <p class="special">타입 선택자와 <span>아이디(#)/ 클래스(.)</span> 선택자가 결합된 형태입니다. </p>
+        <hr>
+        <div class="descendant">
+            <h2>하위 선택자</h2>
+            <p>선택자 내부에 존재하는 <span>또 다른 선택자</span>를 말합니다.</p>
+            <p>후손 관계를 말합니다.</p>
+            <h3><span>자식 선택자와는 다릅니다</span></h3>
+            <p>후손이란 손자, 손녀도 포함함을 말합니다.</p>
+            <span>자식 관계란 아들, 딸만 포함함을 뜻합니다.</span>
+            <p>body span(띄어쓰기) 이라고 하면 body의 자식인 span과 후손인 span을 모두 포함함을 말합니다.<br>
+            (여러개 섞여있는 것 중에 ~만 다 찾아라 라는 뜻임.)</p>
+        </div>
+        <hr><hr>
+        <h2>하위 선택자 테스트</h2>
+        <div class="nitw-box">
+            <p class="desc-test">
+                "The night in <span>Possum Springs</span> grows deeper, and a cold wind howls between the telephone poles.<br> 
+                <span>Mae</span> climbs the stairs toward her home, leaving behind the strange echoes drifting from the woods.<br> 
+                The streetlights <span>flicker</span> as if sending a cryptic signal to an unknown observer.<br> 
+                Between the shelves of the old library, secrets we’ve yet to uncover gather dust,<br> 
+                and the <span>abandoned factory</span> by the river is filled with silence instead of its former glory.<br> 
+                But don't worry. Even if the world is breaking apart just a little bit,<br> 
+                we still have <span>warm coffee</span> for tomorrow morning and our clumsy jokes to share."
+            </p>
+        </div>
+        <hr><hr>  
+        <h2>n번째 자식 찾기</h2>
+        <div class="parent">
+            <div>first</div>
+            <div>second</div>
+            <div>third</div>
+            <div>4th</div>
+            <div>5th</div>
+            <div>6th</div>
+        </div>
+        <hr>
+        <h2>특정 +n 위치 꾸미기</h2>
+        <div class="parent2">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

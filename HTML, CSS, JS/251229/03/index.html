@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <script>
+    document.write("<table border=1>"); // table의 외곽선을 한꺼번에 설정 (style="table, tr, th {} 이런식으로 하지 않아도 된다.")
+    for(let i=0;i<=3;i++)
+    {
+        document.write("<tr>"); // tr을 한번 출력하고
+        for(let t=0;t<=3;t++)
+            document.write("<td>"+i+"행"+t+"열</td>"); // td를 4줄 출력
+        document.write("</tr>") // 나와서 tr을 닫아줌.
+    }
+    document.write("</table>")
+  </script>
+  <hr>
+  <script>
+    document.write("<table border=1>")
+    for(let i=1;i<=5;i++)
+    {   
+        document.write("<tr>");
+        for(let t=1;t<=5;t++)
+            document.write("<td>"+i+"행 "+t+"열 <br>");
+        document.write("</tr>");
+    }
+    document.write("</table>")
+  </script>
+  <hr>
+  <script>
+    for(let i=1;i<9;i++)
+    {
+        document.write((i+1)+"단: "+"<br>");
+        for(let t=1;t<=9;t++)
+            document.write((i+1)+"&nbsp;x&nbsp;"+t+" = "+(i*t)+"<br>");
+        document.write("<br>");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID selector</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div>
+        <h1>ID selector</h1>
+        <ul>
+            <li>
+                특정한 요소를 선택하고자 할 때 사용한다.
+            </li>
+            <li>
+                html 요소에 id를 부여한다.
+            </li>
+            <li>
+                CSS에서 요소의 id 앞에 #을 붙인다.
+            </li>
+            <li>
+                한 문서에 특정 id는 한개여야만 한다. 중복된 이름의 id가 존재하면 안된다. 
+            </li>
+            <li></li>
+                id명은 숫자로 시작할 수 없다.
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul class="parent">
+            <li class="A">
+                몇 개의 요소를 하나의 클래스로 묶어서 스타일을 지정하고자 할 때 사용한다.
+            </li>
+            <li class="A">
+                html 요소에 클래스를 부여한다.
+            </li>
+            <li class="B"> 
+                CSS에서 클래스명 앞에 .을 붙여 호출가능하다.
+            </li>
+            <li class="B" id="child">
+                클래스 선택자는 여러 개의 요소를 한꺼번에 선택할 수 있다.<br>
+                (class=B/id=name2 | font-family sans | .parent>#child CSS 적용중.)
+            </li>
+            <li id="C">
+                클래스명은 숫자로 시작하지 않는다.
+            </li>
+        </ul>
+    </div>
+    <p>class 선택자는 class로 붙인 이름을 가져다 쓰는 선택자입니다. '.'을 붙여 표기합니다.</p>
+    <hr>
+    <h2>전체 선택자</h2>
+    <div>
+        <ul>
+            <li>HTML 문서의 모든 요소를 한꺼번에 선택한다.</li>
+            <li>별표(*) 기호를 사용하여 호출한다.</li>
+            <li>보통 여백 초기화(margin, padding: 0) 설정 시 많이 활용한다.</li>
+            <li>개별 선택자(id, class)보다 우선순위가 낮다.</li>
+            <li>남용하면 브라우저 성능에 부담을 줄 수 있어 주의해야 한다.</li>
+        </ul>
+    </div>
+    <hr>
+    <h2>자식 선택자</h2>
+    <div>
+        <ul>
+            <li>현재 요소의 바로 아래에 나오는 선택자</li>
+            <li>(예시)ul>li라고 표현하면 ul에 포함된 li 요소를 말한다.</li>
+        </ul>
+    </div>
+    <hr>
+    <h2>인접 선택자</h2>
+    <div>  
+        <ul>
+            <li><b>바로 뒤 요소 선택:</b> A+B라고 쓰면, A 바로 다음에 오는 형제 요소 B 딱 하나만 선택한다.</li>
+            <li><b>동일 부모 조건:</b> </li>
+            <li><b>순서의 중요성:</b> 반드시 A가 B보다 먼저 나와야 하며, 중간에 다른 태그가 끼어들면 안된다.</li>
+            <li>
+                <b>스타일 연결</b>: 주로 제목(&lt;h1&gt;) 바로 뒤에 오는 본문(&lt;p&gt;)의 첫 번째 단락에만 
+                특별한 여백을 줄 때 유용하다
+            </li>
+            <li><b>입력 폼 활용: </b> 체크박스(&lt;input&gt;)가 체크되었을 때 바로 뒤의 글자(&lt;label&gt;) 색상을 바꾸는
+            등의 인터랙션에 자주 쓰인다.</li>
+            <hr>
+            <li id="friend-1">사용 예시: 이 (friend-1) li 다음에 오는 부분에 스타일을 노란 볼드체로 적용한다.</li>
+            <li id="friend-2">적용된 결과 (friend-2)</li>
+            <hr>
+        </ul>
+    </div>
+</body>
+</html>

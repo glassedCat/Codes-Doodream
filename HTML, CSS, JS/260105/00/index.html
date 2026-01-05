@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예외처리</title>
+</head>
+<body>
+    <h2>try ~ catch 기본예제</h2>
+    <script>
+        // try {
+        //     let x = y + 1;   // y가 정의되지 않음 → 에러
+        // } catch (e) {
+        //     alert("에러 발생!");
+        // }
+    </script>
+    <h2>try ~ catch 에러 객체 (error / e)</h2>
+    <script>
+        try {
+            // JSON.parse("{name: 'kim'}"); // 잘못된 JSON
+            JSON.parse('{"name": "kim"}');  //잘된 jSON
+
+        } catch (e) {
+            document.write("에러설명 : " + e.message +"<br>");
+            document.write("에러 타입 : " + e.name);
+        }
+    </script>
+</body>
+</html>

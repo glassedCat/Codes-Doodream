@@ -1,0 +1,144 @@
+   a
+        {
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-drag: none;
+            font-weight: bold;
+        }
+        .url, .url:visited
+        {
+            color:blue;  
+        }
+        .url_alt, .url_alt:visited
+        {
+            color:#ff1515;
+        }
+        #nitw:hover
+        {
+            cursor: url('https://cdn.custom-cursor.com/db/20865/nitw-candy-borowski-pointer.png') 10 10, auto;
+        } /* 10 10: 실제 클릭이 일어나는 정확한 좌표를 설정하는 숫자이다. 이 두개 좌표와 , auto 를 넣어야 커서 표시가 된다. */
+        .url:hover
+        {
+            color:rgb(102, 180, 253);
+            text-decoration: underline;
+        }
+        .url_alt:hover
+        {
+            background-color: #ff91d5;
+            font-size: 20px;
+        }
+        .url:active /* 꾹 누를때 할 동작을 정의함 */
+        {
+            color: #ff91d5;
+        }
+        .url_alt:active
+        {
+            color: blueviolet;
+        }
+        .box
+        {
+            border: 2px solid green;
+            height: 400px;
+            width: 400px;
+         
+        }
+        .box::before
+        {
+            content: "수도 클래스 선택자";
+            color: rgb(83, 255, 61);
+            font-weight: bold;
+    
+        }
+        .box>p::first-letter
+        {
+            font-size: 48px; /* == font-size: 3em */
+        }
+        /* .box::before는 HTML 코드를 직접 수정하지 않고도, CSS만으로 특정 요소의 '앞'에 가짜 박스나 콘텐츠를 끼워 넣는 기능이다. */
+
+        .box>p
+        {
+            border: solid 2px pink;
+        }
+        table, td, th
+        {
+            border-collapse: collapse; /* 테이블의 두줄 겹친 테두리를 없애줌 */
+            border: solid 1px black;
+        }
+        th
+        {
+            background-color: rgb(99, 230, 99);
+            color: black;
+            /* -webkit-text-stroke: 1px black; */ /* 텍스트 아웃라인 */
+        }
+        span
+        {
+            font-weight: bold;
+        }
+        .descendant span
+        {
+            border-bottom: 1px dotted green; 
+        }
+        .descendant>span
+        {
+            color: yellow;
+            background-color: black;
+        }
+        .nitw-box
+        {
+            width: fit-content;
+            height: fit-content;
+            font-size: 2em;   
+        }
+        .nitw-box:hover
+        {
+            cursor: url('https://cdn.custom-cursor.com/db/20865/nitw-candy-borowski-pointer.png') 10 10, auto;
+        }
+        @font-face
+        {
+            font-family: 'Nitw P1';
+            src: url('src/font/nitwp1_regular.otf') format('opentype');
+        }
+        .desc-test
+        {
+            font-family: 'Nitw P1';
+            font-style: italic;
+            color: white;
+            background-color: #0a1a47;
+        }
+        .desc-test span
+        {
+            font-weight: bold;
+            color: yellow;
+            background-color: black;
+        }
+        .parent, .parent2
+        {
+            font-weight: bold;
+            width: fit-content;
+            height: fit-content;
+        }
+        .parent div:nth-child(odd)
+        {
+            color: white;
+        }
+        .parent div:nth-child(1)
+        {
+            background-color: blue;
+            
+        }
+        .parent div:nth-child(3)
+        {
+            background-color: green;
+        }
+        .parent div:nth-child(5)
+        {
+            background-color: red;
+        }
+        .parent2 div:nth-child(+4)
+        {
+            background-color: violet;
+        }
+        .parent2 div:nth-child(3n+2) /* 2n: 2의 배수 4n: 4의 배수*/ /* ~n+n 이라는건, 0부터 시작하는 배수에 +n만큼 더한 상태의 배수라는 뜻 */
+        {
+            background-color: lightpink;
+        }

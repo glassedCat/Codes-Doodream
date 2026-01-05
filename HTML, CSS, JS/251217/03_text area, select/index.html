@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text area, select</title>
+    <style>
+        p, legend
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset> <!-- 그룹화된 요소들 주위에 얇은 선을 그려서 시각적으로 구분함. -->
+            <legend>Multiple sentences in the box and the list box</legend>
+            <p>Reply:<br>
+                <textarea name="reply" id="reply" cols="50" rows="5"> 
+                </textarea> <!-- Columns: 가로 / Rows: 세로 -->
+            </p>
+            <p>Select a subject</p>
+            <select>
+                <option value="select">Select...</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS5</option>
+                <option value="js">Javascript</option>
+            </select>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

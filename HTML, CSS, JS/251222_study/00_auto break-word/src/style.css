@@ -1,0 +1,57 @@
+
+
+p.wrap
+{
+    width: 300px;
+    overflow-wrap: break-word;
+}
+
+span.wrap
+{
+    display: inline-block; /* span은 너비를 가질 수 없음, 너비를 가질 수 있게 변경함 */
+    width: 150px;
+    overflow-wrap: break-word;
+}
+
+.text-overflow
+{
+    overflow-wrap: break-word;
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    
+}
+.text-test p
+{
+    border: 2px, solid, black;
+    height: 250px;
+    width: 250px;
+}
+.text-test p
+{
+    margin-bottom: 200px;
+}
+.text-test>p:nth-child(2)
+{
+    overflow: hidden; /* text-overflow 같은 숨김처리된 영역에 처리할 행동을 지정하기 위해, 
+                        먼저 overflow: hidden으로 텍스트를 숨겨야 한다.*/
+    text-overflow: clip;
+}
+.text-test>p:nth-child(4)
+{
+    white-space: nowrap; /* 한줄로 쭉 늘어뜨린다. */
+}
+.text-test>p:nth-child(6)
+{
+    white-space: nowrap; /* ...을 표시하기 위해선 먼저 nowrap으로 한줄로 나열해주고 */
+    overflow: hidden; /* 벗어난 텍스트들을 숨겨주고, */
+    text-overflow: ellipsis; /* 벗어난 텍스트들에 ...을 적용해준다. */
+}
+.text-test>p:nth-child(8)
+{
+    white-space: pre; /* 코드 영역에서 해준 줄바꿈, 공백이 그대로 적용된다. */
+}
+.text-test>p:nth-child(10)
+{
+    white-space: pre; /* 연습을 위해서 묶지않고 두 번 작성함. */
+}

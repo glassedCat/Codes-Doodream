@@ -1,0 +1,37 @@
+body
+{
+    background-color: #89d0ff;
+}
+.box
+{
+    border: 2px solid #cccccc;
+    padding: 15px;
+    margin: 0px;
+}
+.no-bullet
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sentence_1
+{
+    font-style: italic;
+}
+.hidden
+{
+    display:none;
+}
+#hobbyButton
+{
+    color:#42779b;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px 40px;
+    background-color: white;
+    border-radius: 8px;
+}
+#hobbyButton:hover
+{
+    background-color: #96c8e9;
+}

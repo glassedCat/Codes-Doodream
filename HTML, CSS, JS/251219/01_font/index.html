@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+<h2>폰트의 종류</h2>
+<p class="font">폰트의 종류를 설정할 수 있습니다.</p>
+<p>  
+    <b>(Font-family: 휴먼매직체, 고딕)</b>&nbsp;font-family 속성으로 설정할 때는 여러개의 폰트 이름을 제공하는 것이 좋다.<br>
+    왜냐하면 브라우저가 HTML 파일을 표시할 떄 클라이언트 컴퓨터에 지정된 폰트가 없는 경우도 있기 떄문이다.<br>
+    첫 번째 폰트가 없으면 자동적으로 다음 폰트를 시도한다.
+</p>
+</div>
+<p class="mae">
+    <span class="font-name">&lt;font-face - Nitw P1&gt;</span><br>
+    The chilly autumn wind seeped through the cracked windows of the old subway<br> 
+    station. Mae stood there with her hands shoved deep into her pockets, pacing<br> 
+    aimlessly around the abandoned platform. Only the dry crunch of dead leaves<br> 
+    filled the quiet afternoon of Possum Springs.
+</p>
+<hr>
+<p>
+    폰트를 나열할 때는 첫 번쨰 폰트는 개발자가 가장 원하는 폰트, 
+    맨 마지막에는 가장 일반적인 폰트를 지정한다.
+</p>
+<p>
+    만약 폰트 이름이 여러 단어로 되어 있다면 큰따옴표를 사용하여 묶어야한다.
+</p>
+<hr>
+<p>웹 개발자는 사용자의 컴퓨터를 제어할 수 있다. 따라서 사용자의 컴퓨터에 폰트를 설치할 수 없다"그러면 어떻게 하면 좋을까?"></p>
+<p>이런 경우 웹폰트를 사용할 수 있다.</p>
+<p>웹 폰트는 폰트를 웹서버에 저장해 두었다가 필요할 때 사용자의 웹브라우저로 직접 전송하는 방식이다.</p>
+<p>웹 폰트 테스트</p>
+<div  class="web-font">
+    <p id="nanumPen">
+        <span class="font-name">&lt;web font - Nanum Pen Script&gt;</span><br>
+        모든 것이 끝나는 곳에서도, 무엇이든 붙잡고 버텨야 해.<br>
+        세상이 무너져 내려도, 저 위의 별들은 언제나 제자리에 떠 있어.<br>
+        나는 그저 낡은 전철역을 서성이는 쓰레기 포유류일 뿐이야.<br>
+        가나다라마바사!?0123456789
+    </p>
+    <div>
+        <div class="sans">
+            <span class="font-name">&lt;font-face-web - Undertale Sans(Pixel Comic Sans)&gt;</span><br>
+            <p class="dialogue-box">
+                Sans&nbsp;<img src="https://raw.githubusercontent.com/StellaVulpis/Codes-Doodream/refs/heads/main/resource/img/251219_01/sans_face.png"
+                height="40px" width="40px">: 
+                &nbsp;Anyways, if I hadn't said anything. . . 
+            </p>
+            <p class="dialogue-box">
+                Sans&nbsp;<img src="src/img/sans-noeye.jpg"
+                height="50px" width="50px">: &nbsp;<span class="dialogue-sans-serious">. . . You'd be dead where you stand.</span>
+            </p>
+            <p class="dialogue-box">
+                Sans&nbsp;<img src="https://raw.githubusercontent.com/StellaVulpis/Codes-Doodream/refs/heads/main/resource/img/251219_01/sans_face.png"
+                height="40px" width="40px">: 
+                &nbsp;That lady behind the door. . .  She's the only reason you're still breathing.
+            </p>
+            <p class="dialogue-box">
+                Sans&nbsp;<img src="https://raw.githubusercontent.com/StellaVulpis/Codes-Doodream/refs/heads/main/resource/img/251219_01/sans_face.png"
+                height="40px" width="40px">:
+                &nbsp;. . . Just kidding. I'm joking. . .  but hey, don't let me keep you.
+            </div>
+        </p>
+    </div>
+</div>
+<hr>
+<div class="test-1">
+    <p>
+        작은 대문자로 표현할 것인지? 아닌지를 결정합니다. 
+    </p>
+    <p>
+        저 너머의 어둠 속에서 누군가 당신을 지켜보고 있는 것 같은 기분이 듭니다. 
+    </p>
+    <p>
+        차가운 바람이 목덜미를 <span>스치고 지나가며 왠지 모를 소름이</span> 돋기 시작합니다. 
+    </p>
+    <p>
+        하지만 당신은 포기하지 않고 굳건한 의지로 앞으로 나아가기로 결심했습니다. 
+    </p>
+    <p>
+        모든 선택에는 책임이 따르는 법이니 부디 신중하게 행동하는 것이 좋을 겁니다. 
+    </p>
+    자 이제 당신의 이야기가 어떻게 끝맺음될지 직접 확인해 볼 시간입니다.
+</div>
+<hr>
+<h2>폰트의 축약: 속성을 한줄로 기술한다</h2>
+<p>font: font-style, font-variant, font-weight, font-size, line-height, font-family</p>
+<h4>&lt;예시&gt;</h4>
+<code>
+    p<br>
+    {<br>
+        &nbsp;&nbsp;&nbsp;font: italic bold 20px/1.5 '8bit Bold';<br>    
+    }
+</code>
+
+<p>*다만, 글자 크기와 폰트 패밀리는 생략할 수 없다.</p>
+<p>폰트를 이탤릭, 30px, '나눔 손글씨 붓', 궁서, 바탕체로 나타내시오: </p>
+<p class="fontTest">
+    내 영혼이 꼭 노인네 수염 같다는 불길한 기분이 들어.<br> 
+    뭐라고? 넌 노인이 아니잖아. 고양이지. 내 말이 그 말이야. 
+    근데 왜 그런 기분이 드는 걸까?
+</p>
+</body>
+</html>

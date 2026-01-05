@@ -1,0 +1,238 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <script>
+        let str="oooohvyouvlikevboykisservdon'tvyou";
+        let cut=str.split("v");
+        let cut2=cut.join(" ");
+        document.write(cut+"<br>");
+        document.write(cut2+"<br>");
+    </script>
+    <hr>
+    아이디: <input type="text" id="id" size="10"> <!-- size: 시각적인 너비 (10이면 10글자가 들어갈 너비) -->
+    <button onclick="IDCheck()" style="cursor:pointer;">중복확인</button>
+    <p id="msg" style="font-weight:bold;"></p>
+    <script>
+
+        function IDCheck()
+        {
+            // 글자 길이 체크
+            let ID=document.getElementById('id').value;
+            let _p=document.getElementById('msg');
+            let names=
+            [
+                "jordanuwu", "name222", "kingg11", "nnn111aaa", "boykisser"
+            ]
+            if(ID.length < 6)
+            {
+                _p.style.color = red;
+                _p.textContent = "아이디는 6글자 이상으로 입력해주세요.";
+                return;
+            } 
+            for(let i=0; i<names.length; i++)
+            {
+                if(names[i] === ID) 
+                {
+                    _p.style.color='red';
+                    _p.textContent = "중복된 아이디가 있습니다. 확인 후 다시 입력해주세요.";
+                    return; // 아래 사용가능 아이디로 가기전에, 중복이된걸 체크하면 메세지 띄우고 바로 종료시킴.
+                } 
+            }
+            _p.style.color='green';
+            _p.textContent = "사용가능한 아이디 입니다!";
+        }
+    </script>
+    <hr>
+    <h2>시계 만들기</h2>
+    <div id="clock"></div>
+    <script>
+        /*
+            function Clock() {
+            let now = new Date();
+            
+            // 시, 분, 초를 각각 2자리로 맞추는 깔끔한 방법
+            let hours = now.getHours();
+            let minutes = ('0' + now.getMinutes()).slice(-2);
+            let seconds = ('0' + now.getSeconds()).slice(-2); // 괄호 위치 확인!
+            
+            let s = hours + ':' + minutes + ':' + seconds;
+            
+            document.getElementById('clock').innerHTML = s;
+            setTimeout(Clock, 1000); // 문자열 'Clock()' 대신 함수 이름만 쓰는 게 권장됩니다.
+            }
+            Clock();
+        */
+        function Clock()
+        {
+            let nowTime=new Date();
+            let HH=nowTime.getHours();
+            let MM=('0'+nowTime.getMinutes()).slice(-2);
+            let ss=('0'+nowTime.getSeconds()).slice(-2);
+            let t=HH+':'+MM+':'+ss;
+            document.getElementById('clock').innerHTML=t;
+            setTimeout(Clock, 1000);
+        }
+        Clock();
+        
+    </script>
+    <hr>
+    <h2>문자열 검색</h2>
+    <p>indexOf()메서드는 문자열 안에서 주어진 텍스트가 처음 등장하는 위치를 반환한다.
+        lastindexOf()메서드는 문자열의 오른쪽에서부터 문장의 인덱스를 찾음.
+    </p>
+    <script>
+        let a='자바스크립트에 오신 것을 환영합니다.';
+        let b="ooooooh you like kissing boys don't you UWU your a boykisser!";
+        let c='boykisser@gmail.com';
+        let welcome=a.indexOf("환영");
+        let boykisser=b.indexOf("boykisser");
+        let lastword=a.lastIndexOf('환');
+        document.write(welcome+"<br>");
+        document.write(boykisser+"<br>");
+        document.write(lastword+"<br>");
+        let cutwords=c.indexOf("@"); // < 9 반환
+        let id=c.slice(0,cutwords); // boykisser 글자만 따서 아이디변수에 저장
+
+    </script>
+    <hr>
+    <script>
+        str='Like the father, like the son.';
+        find=str.match('like');
+        document.write(find+"<br>");
+        find=str.match(/like/ig); // 대소문자 구별없이 다 찾음
+        document.write(find+"<br>")
+    </script>
+    <hr>
+    <script>
+        let bb="ooooooh@you@like@kissing@boys@don't@you@UWU@your@a@boykisser!";
+        let arr=bb.split('@');
+        for(let i=0;i<arr.length;i++)
+            document.write(i+'-'+arr[i]+"<br>");
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <script>
+        let str="oooohvyouvlikevboykisservdon'tvyou";
+        let cut=str.split("v");
+        let cut2=cut.join(" ");
+        document.write(cut+"<br>");
+        document.write(cut2+"<br>");
+    </script>
+    <hr>
+    아이디: <input type="text" id="id" size="10"> <!-- size: 시각적인 너비 (10이면 10글자가 들어갈 너비) -->
+    <button onclick="IDCheck()" style="cursor:pointer;">중복확인</button>
+    <p id="msg" style="font-weight:bold;"></p>
+    <script>
+
+        function IDCheck()
+        {
+            // 글자 길이 체크
+            let ID=document.getElementById('id').value;
+            let _p=document.getElementById('msg');
+            let names=
+            [
+                "jordanuwu", "name222", "kingg11", "nnn111aaa", "boykisser"
+            ]
+            if(ID.length < 6)
+            {
+                _p.style.color = red;
+                _p.textContent = "아이디는 6글자 이상으로 입력해주세요.";
+                return;
+            } 
+            for(let i=0; i<names.length; i++)
+            {
+                if(names[i] === ID) 
+                {
+                    _p.style.color='red';
+                    _p.textContent = "중복된 아이디가 있습니다. 확인 후 다시 입력해주세요.";
+                    return; // 아래 사용가능 아이디로 가기전에, 중복이된걸 체크하면 메세지 띄우고 바로 종료시킴.
+                } 
+            }
+            _p.style.color='green';
+            _p.textContent = "사용가능한 아이디 입니다!";
+        }
+    </script>
+    <hr>
+    <h2>시계 만들기</h2>
+    <div id="clock"></div>
+    <script>
+        /*
+            function Clock() {
+            let now = new Date();
+            
+            // 시, 분, 초를 각각 2자리로 맞추는 깔끔한 방법
+            let hours = now.getHours();
+            let minutes = ('0' + now.getMinutes()).slice(-2);
+            let seconds = ('0' + now.getSeconds()).slice(-2); // 괄호 위치 확인!
+            
+            let s = hours + ':' + minutes + ':' + seconds;
+            
+            document.getElementById('clock').innerHTML = s;
+            setTimeout(Clock, 1000); // 문자열 'Clock()' 대신 함수 이름만 쓰는 게 권장됩니다.
+            }
+            Clock();
+        */
+        function Clock()
+        {
+            let nowTime=new Date();
+            let HH=nowTime.getHours();
+            let MM=('0'+nowTime.getMinutes()).slice(-2);
+            let ss=('0'+nowTime.getSeconds()).slice(-2);
+            let t=HH+':'+MM+':'+ss;
+            document.getElementById('clock').innerHTML=t;
+            setTimeout(Clock, 1000);
+        }
+        Clock();
+        
+    </script>
+    <hr>
+    <h2>문자열 검색</h2>
+    <p>indexOf()메서드는 문자열 안에서 주어진 텍스트가 처음 등장하는 위치를 반환한다.
+        lastindexOf()메서드는 문자열의 오른쪽에서부터 문장의 인덱스를 찾음.
+    </p>
+    <script>
+        let a='자바스크립트에 오신 것을 환영합니다.';
+        let b="ooooooh you like kissing boys don't you UWU your a boykisser!";
+        let c='boykisser@gmail.com';
+        let welcome=a.indexOf("환영");
+        let boykisser=b.indexOf("boykisser");
+        let lastword=a.lastIndexOf('환');
+        document.write(welcome+"<br>");
+        document.write(boykisser+"<br>");
+        document.write(lastword+"<br>");
+        let cutwords=c.indexOf("@"); // < 9 반환
+        let id=c.slice(0,cutwords); // boykisser 글자만 따서 아이디변수에 저장
+
+    </script>
+    <hr>
+    <script>
+        str='Like the father, like the son.';
+        find=str.match('like');
+        document.write(find+"<br>");
+        find=str.match(/like/ig); // 대소문자 구별없이 다 찾음
+        document.write(find+"<br>")
+    </script>
+    <hr>
+    <script>
+        let bb="ooooooh@you@like@kissing@boys@don't@you@UWU@your@a@boykisser!";
+        let arr=bb.split('@');
+        for(let i=0;i<arr.length;i++)
+            document.write(i+'-'+arr[i]+"<br>");
+    </script>
+</body>
+>>>>>>> f6ea8c951c08b29341afeae87b5067ec93a31abe
+</html>

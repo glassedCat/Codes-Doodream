@@ -1,0 +1,10 @@
+p
+{
+    color: blueviolet;
+}
+.word-break
+{
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    text-align: justify;
+}

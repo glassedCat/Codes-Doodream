@@ -1,0 +1,63 @@
+
+.menu_box li
+{
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.menu_box>h1
+{
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.menu_box ul
+{
+    margin-top: 5px;
+    padding: 0;
+}
+.menu_box li
+{
+
+    display: inline-block;
+    background-color: rgb(187, 61, 61);
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    /*
+        박스의 높이와 같은 값을
+        line-height에 주면 글자가
+        가운데 정렬된다.
+        (line-height: 행간; 텍스트 한 줄의 높이)
+    */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.menu_box li>a
+{
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.menu_box li>a:visited
+{
+    color: white;
+}
+.menu_box li>a:hover
+{
+    background-color: rgb(54, 90, 170);
+    text-decoration: none;
+}
+.menu_box li>a:active
+{
+    background-color: rgb(45, 216, 122);
+}
+/* 
+CSS도 특정 속성에는 코드 순서를 적용하므로, 
+active 속성은 반드시 hover 보다 아래에
+와야 적용된다. 순차적으로 실행되고, 아래 코드가 
+항상 우선순위가 높으므로, 코드작성할 땐 
+최종적으로 적용할 속성은 아래쪽에 작성해줘야 
+한다.
+*/

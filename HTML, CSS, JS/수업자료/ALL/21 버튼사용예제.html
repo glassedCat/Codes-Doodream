@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼사용예제</title>
+</head>
+<body>
+    <form action="#">
+        <p>물품가격 : <input type="text" name="price" id="price"></p>
+        <p>수량 : <input type="text" name="number" id="number"></p>
+        <p><input type="button" value="계산" onclick="sum()"></p>
+    </form>
+    <script>
+        function sum() {
+            var com1 = document.getElementById("price").value;
+            var com2 = document.getElementById("number").value;
+            var sum = com1 * com2;
+            alert(sum)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array 객체</title>
+</head>
+<body>
+    <h2>conCat 예제</h2>
+    <script>
+        let arr1=[1,2,3,4,5];
+        let arr2=[6,7,8,9,10];
+        let joined=arr1.concat(arr2);
+        document.write("array 1: "+arr1+"<br>");
+        document.write("array 2: "+arr2+"<br>");
+        document.write("combined arrays: "+joined);
+    </script>
+    <hr>
+    <h2>indexOf 예제</h2>
+    <script>
+        let chars=["SANNS", "Yuki", "Berry", "Jerry", "Taki"]; 
+        document.write("캐릭터 배열의 인덱스 "+chars.indexOf("Berry")+"번째는 "+chars[chars.indexOf("Berry")]+"입니다.");
+    </script>
+    <hr>
+    <h2>push, pop 예제</h2>
+    <div>
+        push()는 배열 객체 마지막 인덱스에 새 데이터를 삽입합니다.
+        pop()은 배열에 저장된 데이터 중 마지막 인덱스에 저장된 데이터를 삭제하며, 삭제한 요소를 반환한다.
+    </div>
+    <script>
+        let numbers=[10,20,30,40,50];
+        numbers.push(60);
+        document.write("원래 숫자: "+numbers+"<br><br>"); // 60이 추가되어 출력됨
+        let popped=numbers.pop();
+        document.write("pop()메서드를 적용한 원래 변수: "+numbers+" (마지막에 넣은 60이 삭제됨)<br>");
+        document.write("pop()메서드로 저장해놓은 변수: "+popped+"<br>");
+    </script>
+    <hr>
+    <h2>shift 예제</h2>
+    <div>
+        pop()과 반대로 맨 앞에있는 요소를 삭제하고, 삭제한 요소를 반환한다.
+    </div>
+    <script>
+        /*
+            pop() / shift() (삭제형): "내가 방금 이 데이터 지웠어!"라며 삭제한 값을 반환합니다.
+            push() / unshift() (삽입형): "내가 데이터 넣어서 이제 총 몇 개가 됐어!"라며 새로운 배열의 길이를 반환합니다.
+        */
+        let nums=[5,7,9,4,2,3,0,1,11,17,22,48];
+                document.write("원래 숫자: "+nums+"<br>");
+        let shifted=nums.shift();
+                document.write("shift()를 적용한 결과: "+nums+" (5가 삭제됨)<br>");
+        let unshifted=nums.unshift(6); //unshift() >> push()의 반대, 맨 앞에 특정 값을 삽입해준다.
+        document.write("unshift()를 적용한 결과: "+nums+" (새로운 숫자 6이 맨 앞에 삽입됨)<br>"); 
+        nums.sort(); // 알파벳 순으로 정렬한다. (수치값에는 좋지 않을 수 있음)
+        document.write("sort()를 사용해 정렬한 결과: "+nums+"(알파벳식 정렬)<br><br>");
+        nums.sort(function(a,b)
+        {
+            return a-b;
+        }
+        );
+        document.write("오름차순으로 숫자정렬: "+nums+"<br>");
+        nums.sort(function(a,b)
+        {
+            return b-a;
+        });
+        document.write("내림차순으로 숫자정렬: "+nums+"<br>");
+    </script>
+    <hr>
+    <h2>array.slice([begin[,end]])</h2>
+    <script>
+        let Num0=[1,2,3,4,5,6,7,8,9,10];
+        let sliceTest=Num0.slice(5);
+        document.write("원래 배열 숫자: "+Num0+"<br>");
+        document.write(sliceTest+" (5를 삽입했더니 인덱스 5자리 까지의 숫자가 삭제됨.)<br>");
+        let num1=[1,2,3,4,5,6,7,8,9,0];
+        document.write("원래 값: "+num1+"<br>");
+        let num2=num1.slice(2, 9); // 인덱스 2번(3)부터 9번(10)까지 잘라냄.
+        document.write("2번부터 9번까지 자른 후 다른곳에 저장: "+num2+"<br>")
+    </script>
+    <hr>
+    <script>
+        let strings=["hello!","I'm","Boykisser","named","Azu!","UwU"];
+        let henlo=strings.join(" "); // 공백 문자로 배열 내부 문자들을 합침.
+        document.write("원래 문장: "+strings+"<br>");
+        document.write("join() 메서드 적용후: "+henlo);
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array 객체</title>
+</head>
+<body>
+    <h2>conCat 예제</h2>
+    <script>
+        let arr1=[1,2,3,4,5];
+        let arr2=[6,7,8,9,10];
+        let joined=arr1.concat(arr2);
+        document.write("array 1: "+arr1+"<br>");
+        document.write("array 2: "+arr2+"<br>");
+        document.write("combined arrays: "+joined);
+    </script>
+    <hr>
+    <h2>indexOf 예제</h2>
+    <script>
+        let chars=["SANNS", "Yuki", "Berry", "Jerry", "Taki"]; 
+        document.write("캐릭터 배열의 인덱스 "+chars.indexOf("Berry")+"번째는 "+chars[chars.indexOf("Berry")]+"입니다.");
+    </script>
+    <hr>
+    <h2>push, pop 예제</h2>
+    <div>
+        push()는 배열 객체 마지막 인덱스에 새 데이터를 삽입합니다.
+        pop()은 배열에 저장된 데이터 중 마지막 인덱스에 저장된 데이터를 삭제하며, 삭제한 요소를 반환한다.
+    </div>
+    <script>
+        let numbers=[10,20,30,40,50];
+        numbers.push(60);
+        document.write("원래 숫자: "+numbers+"<br><br>"); // 60이 추가되어 출력됨
+        let popped=numbers.pop();
+        document.write("pop()메서드를 적용한 원래 변수: "+numbers+" (마지막에 넣은 60이 삭제됨)<br>");
+        document.write("pop()메서드로 저장해놓은 변수: "+popped+"<br>");
+    </script>
+    <hr>
+    <h2>shift 예제</h2>
+    <div>
+        pop()과 반대로 맨 앞에있는 요소를 삭제하고, 삭제한 요소를 반환한다.
+    </div>
+    <script>
+        /*
+            pop() / shift() (삭제형): "내가 방금 이 데이터 지웠어!"라며 삭제한 값을 반환합니다.
+            push() / unshift() (삽입형): "내가 데이터 넣어서 이제 총 몇 개가 됐어!"라며 새로운 배열의 길이를 반환합니다.
+        */
+        let nums=[5,7,9,4,2,3,0,1,11,17,22,48];
+                document.write("원래 숫자: "+nums+"<br>");
+        let shifted=nums.shift();
+                document.write("shift()를 적용한 결과: "+nums+" (5가 삭제됨)<br>");
+        let unshifted=nums.unshift(6); //unshift() >> push()의 반대, 맨 앞에 특정 값을 삽입해준다.
+        document.write("unshift()를 적용한 결과: "+nums+" (새로운 숫자 6이 맨 앞에 삽입됨)<br>"); 
+        nums.sort(); // 알파벳 순으로 정렬한다. (수치값에는 좋지 않을 수 있음)
+        document.write("sort()를 사용해 정렬한 결과: "+nums+"(알파벳식 정렬)<br><br>");
+        nums.sort(function(a,b)
+        {
+            return a-b;
+        }
+        );
+        document.write("오름차순으로 숫자정렬: "+nums+"<br>");
+        nums.sort(function(a,b)
+        {
+            return b-a;
+        });
+        document.write("내림차순으로 숫자정렬: "+nums+"<br>");
+    </script>
+    <hr>
+    <h2>array.slice([begin[,end]])</h2>
+    <script>
+        let Num0=[1,2,3,4,5,6,7,8,9,10];
+        let sliceTest=Num0.slice(5);
+        document.write("원래 배열 숫자: "+Num0+"<br>");
+        document.write(sliceTest+" (5를 삽입했더니 인덱스 5자리 까지의 숫자가 삭제됨.)<br>");
+        let num1=[1,2,3,4,5,6,7,8,9,0];
+        document.write("원래 값: "+num1+"<br>");
+        let num2=num1.slice(2, 9); // 인덱스 2번(3)부터 9번(10)까지 잘라냄.
+        document.write("2번부터 9번까지 자른 후 다른곳에 저장: "+num2+"<br>")
+    </script>
+    <hr>
+    <script>
+        let strings=["hello!","I'm","Boykisser","named","Azu!","UwU"];
+        let henlo=strings.join(" "); // 공백 문자로 배열 내부 문자들을 합침.
+        document.write("원래 문장: "+strings+"<br>");
+        document.write("join() 메서드 적용후: "+henlo);
+    </script>
+</body>
+>>>>>>> f6ea8c951c08b29341afeae87b5067ec93a31abe
+</html>

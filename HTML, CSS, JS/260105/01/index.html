@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <h1>number guess</h1>
+    <input type="text" id="input" placeholder="숫자를 입력">
+    <button onclick="guess()">확인</button>
+    <p id="msg"></p>
+    <script>
+        var number=15;
+        function guess()
+        {
+            try
+            {
+                var x=document.getElementById("input").value;
+                if (x=="") throw "값을 입력해주세요";
+                if (isNaN(x)) throw "숫자만 입력해주세요";
+                if (x > number) throw "입력 값이 너무 큽니다";
+                if (x < number) throw "입력 값이 너무 작습니다";
+                if (x == number) throw "값을 맞췄습니다";
+            }
+            catch (e)
+            {
+                var y=document.getElementById("msg");
+                y.innerHTML = "힌트: "+e;
+            }
+            
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

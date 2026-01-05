@@ -1,0 +1,96 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <h2>Function</h2>
+  <script>
+    function myprogram()
+    {
+        document.write("hello");
+        return;
+        documen.write("javascript");
+    }
+    myprogram();
+  </script>
+  <hr>
+  <script>
+    var num=0;
+    function test()
+    {
+        num++;
+        document.write(num, "<br>");
+        if(num==10)
+            return;
+        test(); // 재귀호출, 반복실행하는 역할을 함. >> 10번 실행 후 return해서 종료 >> 외부함수 호출 후 실행.
+    }
+    test();
+  </script>
+  <hr>
+  <script>
+    var num=150;
+    document.write(num); // >> 150 (전역변수)
+    function func()
+    {
+        var num=300;
+        this.num=240;
+        document.write(num, "<br>"); // >> 300 (지역변수)
+        document.write(this.num); // >> 240 (전역변수)
+    }
+    func();
+    
+  </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <h2>Function</h2>
+  <script>
+    function myprogram()
+    {
+        document.write("hello");
+        return;
+        document.write("javascript");
+    }
+    myprogram();
+  </script>
+  <hr>
+  <script>
+    var num=0;
+    function test()
+    {
+        num++;
+        document.write(num, "<br>");
+        if(num==10)
+            return;
+        test(); // 재귀호출, 반복실행하는 역할을 함. >> 10번 실행 후 return해서 종료 >> 외부함수 호출 후 실행.
+    }
+    test();
+  </script>
+  <hr>
+  <script>
+    var num=150;
+    document.write(num); // >> 150 (전역변수)
+    function func()
+    {
+        var num=300;
+        this.num=240;
+        document.write(num, "<br>"); // >> 300 (지역변수)
+        document.write(this.num); // >> 240 (전역변수)
+    }
+    func();
+    
+  </script>
+</body>
+>>>>>>> f6ea8c951c08b29341afeae87b5067ec93a31abe
+</html>

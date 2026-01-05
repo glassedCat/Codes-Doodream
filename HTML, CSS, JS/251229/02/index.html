@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    table, tr, td, th
+    {
+        border: double, 2px, black;
+    }
+  </style>
+</head>
+<body>
+    <h1>header1</h1>
+    <script>
+        for(let i=2;i<7;i++)
+        {
+            document.write("<h"+i+">header"+i+"</h"+i+">");
+        }
+    </script>
+    <hr>
+    <script>
+        var i=0;
+        while(i<=9)
+        {
+            document.write(i+"<br>");
+            i++
+        }
+    </script>
+    <hr>
+    <table>
+        <tr>
+            <td>섭씨온도</td>
+            <td>화씨온도</td>
+        </tr>
+        <script>
+            for(var cels=0; cels<=10;cels++)
+            {
+                // js 반복문을 사용하면 태그를 일일히 적지않고 한줄로 자동화시킬 수 있다.
+                document.write("<tr><td>"+cels+"</td><td>"+((cels*1.8)+32)+"</td></tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>

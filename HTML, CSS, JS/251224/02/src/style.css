@@ -1,0 +1,38 @@
+
+
+body
+{
+    background-image: url('img/01.png');
+    /* CSS에선 src를 스킵해야 한다. */
+    background-size: 200px 200px;
+    border: 2px solid transparent;
+    background-repeat: repeat;
+    background-origin: content-box;
+    background-clip: padding-box;
+}
+div
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+div:nth-child(1)
+{
+    background-color: lightpink;
+    top: 50px;
+    left: 50px;
+}
+div:nth-child(2)
+{
+    background-color: lightblue;
+    top: 80px;
+    left: 80px;
+}
+div:nth-child(3)
+{
+    background-color: white;
+    border: 1.5px solid black;
+    box-sizing: border-box;
+    top: 110px;
+    left: 110px;
+}

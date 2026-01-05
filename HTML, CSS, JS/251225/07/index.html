@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <h2>연산자 테스트</h2>
+  <p class="bool"></p>
+  <script>
+    // 논리연산자: ===, ==, !==, &&, ||, >, <
+    // double not(!!): 값을 뒤바꿔줌 (0>>1/1>>0)
+    // 삼항 연산자 ( 조건 ? true / false ): 참 거짓 상태를 뒤바꿔줌.
+    // 널 병합 연산자(??): 값이 없을때 대체값을 사용 
+    var a=10; 
+    var b=10;
+    var result = a>b ? "true, a is bigger." : "false, a and b are the same."; 
+    const bool = document.getElementsByClassName('bool');
+    bool[0].textContent = result;
+  </script>
+</body>
+</html>
