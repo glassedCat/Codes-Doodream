@@ -1,3 +1,7 @@
+https://www.notion.so/Git-Git-hub-2dd9ce67d30b80c2bf5bea9f49ed2b05
+
+
+
 
 세팅하기)
 git config --global user.name <username>
