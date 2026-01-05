@@ -1,0 +1,88 @@
+
+세팅하기)
+git config --global user.name <username>
+git config --global user.email <username>
+
+아이디 이메일 확인)
+git config user.name
+git config user.email
+
+파일 업로드 세팅)
+git init
+
+git add . (다중 업로드)
+git add <filename.extension> (수동 업로드)
+
+git status
+
+파일 업로드하기 (커밋))
+git commit -m "<commit text>" / git commit --message "<commit text>"
+(이미 업로드한 파일에 한해서 git commit -am "message" 로 스테이지에
+추가와 커밋을 동시에 할 수 있다.)
+
+
+git log
+
+
+add .  등으로 파일을 추가한 뒤 commit 만 하면 텍스트를 입력할 수 있는 
+창이 나온다. 
+
+노란색 텍스트로 제목을 작성, 엔터 누르고 내용을 작성, 그 다음 esc를 누르고
+:write / :w 를 입력하면 내용이 저장됨.
+
+:quit 또는 :q를 입력하면 입력창이 닫힘.
+
+
+버전 태깅하기)
+git tag v<버전명> 로 버전을 만들 수 있다
+git log 또는 git log --oneline 으로 버전을 조회할 수 있음
+
+
+버전 교체 또는 추가하기)
+git log --oneline 을 한 뒤, 특정 버전을 
+
+git tag v1.0.1(예시) 처럼 써준 뒤, 버전이 없는 곳의 해쉬태그를 
+같이 입력해주면 그곳에 내가 써준 버전이 가서 붙는다.
+
+(예: bf151a2 my first git upload >> git tag v1.0.0b bf151a2
+>> git log --oneline >> bf151a2 (tag: 1.0.0b) my first git upload
+
+
+버전 리스트 조회하기)
+git tag --list 또는 git tag -l 로 버전을 조회할 수 있음 
+
+버전 태그 삭제하기)
+git tag --delete 또는 git tag -d <버전명>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
