@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <img src="src/puro.gif" alt="CANNOT LOAD THE IMAGE" style="cursor:pointer;" 
+    id="puro" onclick="toggleImg()">
+    <p id="text1">THIS IS JUST SOME TEXT</p>
+    <button style="width:150px;height:150px;background-color:pink; cursor:pointer;" onclick="toggleText()">텍스트색상변경</button>
+    <script>
+        let num=0; let t=0;
+        // 이미지 등 파일에는 .src를 써서 불러온다
+        let IMG=document.getElementById("puro");
+        let txt=document.getElementById("text1");
+        function toggleImg()
+        {
+            num++;
+            if(num%2==0)
+            {
+                IMG.src="src/kaiju.png";
+            }
+            else
+            {
+                IMG.src="src/puro.gif";
+            }  
+        }
+        function toggleText()
+        {
+            t++;
+            if(t%2==0)
+            {
+                txt.style.color="red";
+            }
+            else
+            {
+                txt.style.color="blue";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+
+    <form name="myForm">
+        <input type="text" id="target" name="text1">
+        <input type="submit" value="제출" onclick="process()">
+    </form>
+    <script>
+        function process()
+        {
+            // 태그 네임으로 찾기
+            alert(document.myForm.text1.value+"\n");
+            // 아이디로 찾기
+            alert(document.getElementById('target').value +"\n");
+        }
+    </script>
+    <hr>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ul>
+    <script>
+        function test()
+        {
+            let unOrderedList=document.getElementsByTagName('ul');
+            let innerItems;
+            for(let i=0;i<unOrderedList.length;i++)
+                innerItems=unOrderedList[i].getElementsByTagName('li'); // getElementsByTagName에는 .value를 사용할 수 없다.
+            for(let i=0;i<innerItems.length;i++)
+                alert(innerItems[i].textContent);
+            
+
+        }
+        test();
+      
+    </script>
+
+</body>
+</html>
