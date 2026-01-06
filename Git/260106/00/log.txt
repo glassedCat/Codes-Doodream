@@ -1,0 +1,1396 @@
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git init
+Initialized empty Git repository in C:/Users/pc07-00/Documents/MJH/Codes-Doodrea
+m/260106/00/.git/
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ add .
+bash: add: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git commit -m "a"
+[main (root-commit) 3e0633e] a
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git commit -m "b"
+[main fc7c9c5] b
+ 1 file changed, 1 insertion(+)
+ create mode 100644 b.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git commit -m "c"
+[main 201229a] c
+ 1 file changed, 1 insertion(+)
+ create mode 100644 c.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+201229a (HEAD -> main) c
+fc7c9c5 b
+3e0633e a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag 1.0.0 3e0633e
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag 1.0.1 fc7c9c5
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag 1.0.2 201229a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+201229a (HEAD -> main, tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch
+* main
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ foo
+bash: foo: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch foo
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch
+  foo
+* main
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git checkout foo
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git branch
+* foo
+  main
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log
+commit 201229a4feab0db21d701335c7307a90d32c710c (HEAD -> foo, tag: 1.0.2, main)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 12:27:43 2026 +0900
+
+    c
+
+commit fc7c9c50cb5192c5dc85fb72b7e2bd7a31952930 (tag: 1.0.1)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 12:27:18 2026 +0900
+
+    b
+
+commit 3e0633efe361084059ba21e1d6f70345a392f492 (tag: 1.0.0)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 12:26:45 2026 +0900
+
+    a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+201229a (HEAD -> foo, tag: 1.0.2, main) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git commit -m "4th commit"
+[foo 8a955a1] 4th commit
+ 2 files changed, 86 insertions(+)
+ create mode 100644 d.txt
+ create mode 100644 log.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git tag 1.0.3
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ log --oneline
+bash: log: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+8a955a1 (HEAD -> foo, tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2, main) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ status
+bash: status: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git status
+On branch foo
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   foo.txt
+        modified:   log.txt
+
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git commit -m "foo"
+[foo 38188e2] foo
+ 2 files changed, 50 insertions(+)
+ create mode 100644 foo.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+38188e2 (HEAD -> foo) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2, main) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git tag 1.0.4
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log
+commit 38188e26c551f373ae889848a5acae16eca68d4f (HEAD -> foo, tag: 1.0.4)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 12:43:39 2026 +0900
+
+    foo
+
+commit 8a955a151338c76aec8f28d6a1fa512557f4b07b (tag: 1.0.3)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 12:32:16 2026 +0900
+
+    4th commit
+
+commit 201229a4feab0db21d701335c7307a90d32c710c (tag: 1.0.2, main)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 12:27:43 2026 +0900
+
+    c
+
+commit fc7c9c50cb5192c5dc85fb72b7e2bd7a31952930 (tag: 1.0.1)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 12:27:18 2026 +0900
+
+    b
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+38188e2 (HEAD -> foo, tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2, main) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+38188e2 (HEAD -> foo, tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2, main) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git commit -m "e"
+[foo c7c850d] e
+ 1 file changed, 1 insertion(+)
+ create mode 100644 e.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git branch
+* foo
+  main
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git diff
+diff --git a/log.txt b/log.txt
+index 84b2e69..dc8cab0 100644
+--- a/log.txt
++++ b/log.txt
+@@ -131,5 +131,94 @@ $ git log --oneline
+ fc7c9c5 (tag: 1.0.1) b
+ 3e0633e (tag: 1.0.0) a
+
++pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
++$ git add .
++
++pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
++$ status
++bash: status: command not found
++
++pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
++$ git status
++On branch foo
++Changes to be committed:
++  (use "git restore --staged <file>..." to unstage)
++        new file:   foo.txt
++        modified:   log.txt
++
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git diff
+diff --git a/foo.txt b/foo.txt
+index e69de29..43d88b6 100644
+--- a/foo.txt
++++ b/foo.txt
+@@ -0,0 +1 @@
++AAA
+\ No newline at end of file
+diff --git a/log.txt b/log.txt
+index 84b2e69..dc8cab0 100644
+--- a/log.txt
++++ b/log.txt
+@@ -131,5 +131,94 @@ $ git log --oneline
+ fc7c9c5 (tag: 1.0.1) b
+ 3e0633e (tag: 1.0.0) a
+
++pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
++$ git add .
++
++pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
++$ status
++bash: status: command not found
++
++pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git commit -m " "
+Aborting commit due to empty commit message.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git commit -m "@"
+[foo 111a806] @
+ 2 files changed, 90 insertions(+)
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git diff
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git diff
+diff --git a/foo.txt b/foo.txt
+index 43d88b6..9b55686 100644
+--- a/foo.txt
++++ b/foo.txt
+@@ -1 +1 @@
+-AAA
+\ No newline at end of file
++aAAA
+\ No newline at end of file
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git merge foo
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git commit "foo"
+error: pathspec 'foo' did not match any file(s) known to git
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git commit "new"
+error: pathspec 'new' did not match any file(s) known to git
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git commit ""
+fatal: empty string is not a valid pathspec. please use . instead if you meant t
+o match all paths
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git commit -m "foo"
+[foo 4c1e2b0] foo
+ 4 files changed, 80 insertions(+), 1 deletion(-)
+ create mode 100644 foo_d.txt
+ create mode 100644 foo_e.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git merge foo
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git branch
+* foo
+  main
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git chckout foo
+git: 'chckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git checkout foo
+Already on 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git merge foo
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git merge foo
+Updating 201229a..4c1e2b0
+Fast-forward
+ d.txt     |   1 +
+ e.txt     |   1 +
+ foo.txt   |   1 +
+ foo_d.txt |   0
+ foo_e.txt |   0
+ log.txt   | 303 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 306 insertions(+)
+ create mode 100644 d.txt
+ create mode 100644 e.txt
+ create mode 100644 foo.txt
+ create mode 100644 foo_d.txt
+ create mode 100644 foo_e.txt
+ create mode 100644 log.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git checkout foo
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git diff
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+4c1e2b0 (HEAD -> foo, main) foo
+111a806 @
+c7c850d e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+4c1e2b0 (HEAD -> main, foo) foo
+111a806 @
+c7c850d e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git checkout foo
+M       a.txt
+M       log.txt
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git commit -m "foo commit"
+[foo 2363efb] foo commit
+ 2 files changed, 108 insertions(+), 1 deletion(-)
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+2363efb (HEAD -> foo) foo commit
+4c1e2b0 (main) foo
+111a806 @
+c7c850d e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git merge foo
+Updating 4c1e2b0..2363efb
+Fast-forward
+ a.txt   |   3 +-
+ log.txt | 106 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 108 insertions(+), 1 deletion(-)
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git commit -m "foo 2"
+[main da2b757] foo 2
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ diff
+diff: missing operand after ‘diff’
+diff: Try 'diff --help' for more information.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git diff
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log
+commit da2b757b694dd2698d162e0c24050aa959fa7edb (HEAD -> main)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 13:00:45 2026 +0900
+
+    foo 2
+
+commit 2363efb9729dd6d1145efd40fc328e40c674ed72 (foo)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 12:57:53 2026 +0900
+
+    foo commit
+
+commit 4c1e2b01a003c073a3db368bcd565a68efb79e21
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 12:51:29 2026 +0900
+
+    foo
+
+commit 111a8066ebaeae63eab18fccdf3eca6e70827b8c
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 12:48:44 2026 +0900
+
+    @
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git add a.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ branch bar
+bash: branch: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch bar
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ branch
+bash: branch: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch
+  bar
+  foo
+* main
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git checkout bar
+M       log.txt
+Switched to branch 'bar'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ touch bar_a.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ touch bar_b.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ status
+bash: status: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ git status
+On branch bar
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   log.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bar_a.txt
+        bar_b.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ log --oneline
+bash: log: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ git log --oneline
+da2b757 (HEAD -> bar, main) foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ git commit -m "bar created"
+[bar 10c527f] bar created
+ 3 files changed, 105 insertions(+)
+ create mode 100644 bar_a.txt
+ create mode 100644 bar_b.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+da2b757 (HEAD -> main) foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git differ
+git: 'differ' is not a git command. See 'git --help'.
+
+The most similar command is
+        diff-tree
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ differ
+bash: differ: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git diff
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+da2b757 (HEAD -> main) foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch
+  bar
+  foo
+* main
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   e.txt
+
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git commit -m "e commit"
+[main 9380312] e commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+9380312 (HEAD -> main) e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag
+1.0.0
+1.0.1
+1.0.2
+1.0.3
+1.0.4
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag 1.0.5
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag 1.0.6
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag 1.0.7
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag
+1.0.0
+1.0.1
+1.0.2
+1.0.3
+1.0.4
+1.0.5
+1.0.6
+1.0.7
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+9380312 (HEAD -> main, tag: 1.0.7, tag: 1.0.6, tag: 1.0.5) e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag 1.0.5
+fatal: tag '1.0.5' already exists
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag -d 1.0.7 1.0.6 1.0.5
+Deleted tag '1.0.7' (was 9380312)
+Deleted tag '1.0.6' (was 9380312)
+Deleted tag '1.0.5' (was 9380312)
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+9380312 (HEAD -> main) e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag 1.0.5
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+9380312 (HEAD -> main, tag: 1.0.5) e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag -d 1.0.5
+Deleted tag '1.0.5' (was 9380312)
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag c7c850d 1.0.5
+fatal: Failed to resolve '1.0.5' as a valid ref.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git tag 1.0.5 c7c850d
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git checkout bar
+Switched to branch 'bar'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ git rebase main
+Successfully rebased and updated refs/heads/bar.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ git --oneline
+unknown option: --oneline
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy
+-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envva
+r>]
+           <command> [<args>]
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ git log --oneline
+ef7c914 (HEAD -> bar) bar created
+9380312 (main) e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (bar)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git foo rebase
+git: 'foo' is not a git command. See 'git --help'.
+
+The most similar command is
+        hook
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git rebase foo
+Current branch main is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+9380312 (HEAD -> main) e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git rebase foo
+Current branch main is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git rebase bar
+Successfully rebased and updated refs/heads/main.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git checkout main
+Already on 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git rebase bar
+Current branch main is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git rebase bar
+Current branch main is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git reset --hard
+HEAD is now at ef7c914 bar created
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git reset --hard ef7c914
+HEAD is now at ef7c914 bar created
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git rebase bar
+Current branch main is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git reset
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ ^C
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git checkout head
+Note: switching to 'head'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at ef7c914 bar created
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 ((ef7c914...))
+$ git log --oneline
+ef7c914 (HEAD, main, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 ((ef7c914...))
+$ git checkout foo
+Previous HEAD position was ef7c914 bar created
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+2363efb (HEAD -> foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git checkout main
+Already on 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git merge bar
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git merge main
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git merge main bar
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb (foo) foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch
+  bar
+  foo
+* main
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch --delete bar
+Deleted branch bar (was ef7c914).
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch -d foo
+Deleted branch foo (was 2363efb).
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch bar
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch foo
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main, foo, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch -d foo
+Deleted branch foo (was ef7c914).
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch --delete bar
+Deleted branch bar (was ef7c914).
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git checkout bar
+error: pathspec 'bar' did not match any file(s) known to git
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch bar 9380312
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch foo da2b757
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main) bar created
+9380312 (bar) e commit
+da2b757 (foo) foo 2
+2363efb foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ ^C
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch -f foo 4c1e2b0
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch -f bar da2b757
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main) bar created
+9380312 e commit
+da2b757 (bar) foo 2
+2363efb foo commit
+4c1e2b0 (foo) foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch -f bar 9380312
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git branch -f foo da2b757
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git log --oneline
+ef7c914 (HEAD -> main) bar created
+9380312 (bar) e commit
+da2b757 (foo) foo 2
+2363efb foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (main)
+$ git rebase bar foo
+Successfully rebased and updated refs/heads/foo.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+9380312 (HEAD -> foo, bar) e commit
+da2b757 foo 2
+2363efb foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git rebase main
+Successfully rebased and updated refs/heads/foo.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+ef7c914 (HEAD -> foo, main) bar created
+9380312 (bar) e commit
+da2b757 foo 2
+2363efb foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git rebase bar foo main
+usage: git rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base]
+ [<upstream> [<branch>]]
+   or: git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<bran
+ch>]
+   or: git rebase --continue | --abort | --skip | --edit-todo
+
+    --[no-]onto <revision>
+                          rebase onto given branch instead of upstream
+    --[no-]keep-base      use the merge-base of upstream and branch as the curre
+nt base
+    --no-verify           allow pre-rebase hook to run
+    --verify              opposite of --no-verify
+    -q, --[no-]quiet      be quiet. implies --no-stat
+    -v, --[no-]verbose    display a diffstat of what changed upstream
+    -n, --no-stat         do not show diffstat of what changed upstream
+    --stat                opposite of --no-stat
+    --[no-]signoff        add a Signed-off-by trailer to each commit
+    --[no-]committer-date-is-author-date
+                          make committer date match author date
+    --[no-]reset-author-date
+                          ignore author date and use current date
+    -C <n>                passed to 'git apply'
+    --[no-]ignore-whitespace
+                          ignore changes in whitespace
+    --[no-]whitespace <action>
+                          passed to 'git apply'
+    -f, --[no-]force-rebase
+                          cherry-pick all commits, even if unchanged
+    --no-ff               cherry-pick all commits, even if unchanged
+    --ff                  opposite of --no-ff
+    --continue            continue
+    --skip                skip current patch and continue
+    --abort               abort and check out the original branch
+    --quit                abort but keep HEAD where it is
+    --edit-todo           edit the todo list during an interactive rebase
+    --show-current-patch  show the patch file being applied or merged
+    --apply               use apply strategies to rebase
+    -m, --merge           use merging strategies to rebase
+    -i, --interactive     let the user edit the list of commits to rebase
+    --[no-]rerere-autoupdate
+                          update the index with reused conflict resolution if po
+ssible
+    --empty (drop|keep|stop)
+                          how to handle commits that become empty
+    --[no-]autosquash     move commits that begin with squash!/fixup! under -i
+    --[no-]update-refs    update branches that point to commits that are being r
+ebased
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG-sign commits
+    --[no-]autostash      automatically stash/stash pop before and after
+    -x, --[no-]exec <exec>
+                          add exec lines after each commit of the editable list
+    -r, --[no-]rebase-merges[=<mode>]
+                          try to rebase merges instead of skipping them
+    --[no-]fork-point     use 'merge-base --fork-point' to refine upstream
+    -s, --[no-]strategy <strategy>
+                          use the given merge strategy
+    -X, --[no-]strategy-option <option>
+                          pass the argument through to the merge strategy
+    --[no-]root           rebase all reachable commits up to the root(s)
+    --[no-]reschedule-failed-exec
+                          automatically re-schedule any `exec` that fails
+    --[no-]reapply-cherry-picks
+                          apply all changes, even those already present upstream
+
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git rebase bar foo main
+usage: git rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base]
+ [<upstream> [<branch>]]
+   or: git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<bran
+ch>]
+   or: git rebase --continue | --abort | --skip | --edit-todo
+
+    --[no-]onto <revision>
+                          rebase onto given branch instead of upstream
+    --[no-]keep-base      use the merge-base of upstream and branch as the curre
+nt base
+    --no-verify           allow pre-rebase hook to run
+    --verify              opposite of --no-verify
+    -q, --[no-]quiet      be quiet. implies --no-stat
+    -v, --[no-]verbose    display a diffstat of what changed upstream
+    -n, --no-stat         do not show diffstat of what changed upstream
+    --stat                opposite of --no-stat
+    --[no-]signoff        add a Signed-off-by trailer to each commit
+    --[no-]committer-date-is-author-date
+                          make committer date match author date
+    --[no-]reset-author-date
+                          ignore author date and use current date
+    -C <n>                passed to 'git apply'
+    --[no-]ignore-whitespace
+                          ignore changes in whitespace
+    --[no-]whitespace <action>
+                          passed to 'git apply'
+    -f, --[no-]force-rebase
+                          cherry-pick all commits, even if unchanged
+    --no-ff               cherry-pick all commits, even if unchanged
+    --ff                  opposite of --no-ff
+    --continue            continue
+    --skip                skip current patch and continue
+    --abort               abort and check out the original branch
+    --quit                abort but keep HEAD where it is
+    --edit-todo           edit the todo list during an interactive rebase
+    --show-current-patch  show the patch file being applied or merged
+    --apply               use apply strategies to rebase
+    -m, --merge           use merging strategies to rebase
+    -i, --interactive     let the user edit the list of commits to rebase
+    --[no-]rerere-autoupdate
+                          update the index with reused conflict resolution if po
+ssible
+    --empty (drop|keep|stop)
+                          how to handle commits that become empty
+    --[no-]autosquash     move commits that begin with squash!/fixup! under -i
+    --[no-]update-refs    update branches that point to commits that are being r
+ebased
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG-sign commits
+    --[no-]autostash      automatically stash/stash pop before and after
+    -x, --[no-]exec <exec>
+                          add exec lines after each commit of the editable list
+    -r, --[no-]rebase-merges[=<mode>]
+                          try to rebase merges instead of skipping them
+    --[no-]fork-point     use 'merge-base --fork-point' to refine upstream
+    -s, --[no-]strategy <strategy>
+                          use the given merge strategy
+    -X, --[no-]strategy-option <option>
+                          pass the argument through to the merge strategy
+    --[no-]root           rebase all reachable commits up to the root(s)
+    --[no-]reschedule-failed-exec
+                          automatically re-schedule any `exec` that fails
+    --[no-]reapply-cherry-picks
+                          apply all changes, even those already present upstream
+
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+ef7c914 (HEAD -> foo, main) bar created
+9380312 (bar) e commit
+da2b757 foo 2
+2363efb foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git merge bar
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+ef7c914 (HEAD -> foo, main) bar created
+9380312 (bar) e commit
+da2b757 foo 2
+2363efb foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git branch -f bar ef7c914
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$ git log --oneline
+ef7c914 (HEAD -> foo, main, bar) bar created
+9380312 e commit
+da2b757 foo 2
+2363efb foo commit
+4c1e2b0 foo
+111a806 @
+c7c850d (tag: 1.0.5) e
+38188e2 (tag: 1.0.4) foo
+8a955a1 (tag: 1.0.3) 4th commit
+201229a (tag: 1.0.2) c
+fc7c9c5 (tag: 1.0.1) b
+3e0633e (tag: 1.0.0) a
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/00 (foo)
+$

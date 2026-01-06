@@ -1,0 +1,430 @@
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git user.name glassedCat
+git: 'user.name' is not a git command. See 'git --help'.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git config user.name glassedCat
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git config user.email knksrp60@gmail.com
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git config user.name
+glassedCat
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git config user.email
+knksrp60@gmail.com
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git init
+Initialized empty Git repository in C:/Users/pc07-00/Documents/MJH/Codes-Doodrea
+m/260106/01/.git/
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git commit -m "first commit"
+[main (root-commit) 238304b] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log
+commit 238304b9af6db9f197471dd2dbba9711be72fbf5 (HEAD -> main)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 14:54:21 2026 +0900
+
+    first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag 1.0.0b
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+238304b (HEAD -> main, tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git commit -m "second commit"
+[main c31d3ee] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 b.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git commit -m "third commit"
+[main accda99] third commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 c.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log
+commit accda99db29991bb6239829a24360c6b3e5e3773 (HEAD -> main)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 14:58:06 2026 +0900
+
+    third commit
+
+commit c31d3eedd56d9e22c4d275e44420963b4fa0c997
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 14:56:47 2026 +0900
+
+    second commit
+
+commit 238304b9af6db9f197471dd2dbba9711be72fbf5 (tag: 1.0.0b)
+Author: glassedCat <knksrp60@gmail.com>
+Date:   Tue Jan 6 14:54:21 2026 +0900
+
+    first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+accda99 (HEAD -> main) third commit
+c31d3ee second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag c31d3ee 1.0.0a
+fatal: Failed to resolve '1.0.0a' as a valid ref.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag 1.0.0a c31d3ee
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag 1.0.1accda99
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+accda99 (HEAD -> main, tag: 1.0.1accda99) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag -d accda99
+error: tag 'accda99' not found.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag -d
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+accda99 (HEAD -> main, tag: 1.0.1accda99) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag -d 1.0.1accda99
+Deleted tag '1.0.1accda99' (was accda99)
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag 1.0.1 accda99
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+accda99 (HEAD -> main, tag: 1.0.1) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git branch foo
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git commit -m "fourth commit"
+[main c51470e] fourth commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 foo_d.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+c51470e (HEAD -> main) fourth commit
+accda99 (tag: 1.0.1, foo) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+g
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag c51470e 1.0.11
+fatal: Failed to resolve '1.0.11' as a valid ref.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag 1.0.11 c51470e
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git branch
+  foo
+* main
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git commit -m "5th commit"
+[main d7b78c3] 5th commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 foo_e.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git differ
+git: 'differ' is not a git command. See 'git --help'.
+
+The most similar command is
+        diff-tree
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ differ
+bash: differ: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git diff
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+d7b78c3 (HEAD -> main) 5th commit
+c51470e (tag: 1.0.11) fourth commit
+accda99 (tag: 1.0.1, foo) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git tag 1.0.12 d7b78c3
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+d7b78c3 (HEAD -> main, tag: 1.0.12) 5th commit
+c51470e (tag: 1.0.11) fourth commit
+accda99 (tag: 1.0.1, foo) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git merge foo main
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+d7b78c3 (HEAD -> main, tag: 1.0.12) 5th commit
+c51470e (tag: 1.0.11) fourth commit
+accda99 (tag: 1.0.1, foo) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git checkout foo
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git log --oneline
+accda99 (HEAD -> foo, tag: 1.0.1) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+d7b78c3 (HEAD -> main, tag: 1.0.12) 5th commit
+c51470e (tag: 1.0.11) fourth commit
+accda99 (tag: 1.0.1, foo) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git checkout foo
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git differ
+git: 'differ' is not a git command. See 'git --help'.
+
+The most similar command is
+        diff-tree
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git diff
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ diff
+diff: missing operand after ‘diff’
+diff: Try 'diff --help' for more information.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git checkout main
+error: The following untracked working tree files would be overwritten by checko
+ut:
+        foo_d.txt
+        foo_e.txt
+Please move or remove them before you switch branches.
+Aborting
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+d7b78c3 (HEAD -> main, tag: 1.0.12) 5th commit
+c51470e (tag: 1.0.11) fourth commit
+accda99 (tag: 1.0.1, foo) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git checkout foo
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git log --oneline
+accda99 (HEAD -> foo, tag: 1.0.1) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ 파일이 종속된게 아닌, 브랜치가 만들어진 시점으로 되돌아가는것
+bash: 파일이: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+d7b78c3 (HEAD -> main, tag: 1.0.12) 5th commit
+c51470e (tag: 1.0.11) fourth commit
+accda99 (tag: 1.0.1, foo) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git branch -f foo d7b78c3
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+d7b78c3 (HEAD -> main, tag: 1.0.12, foo) 5th commit
+c51470e (tag: 1.0.11) fourth commit
+accda99 (tag: 1.0.1) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git merge
+fatal: No remote for the current branch.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git merge main
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git merge foo
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git checkout foo
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git branch -f foo c51470e
+fatal: cannot force update the branch 'foo' used by worktree at 'C:/Users/pc07-0
+0/Documents/MJH/Codes-Doodream/260106/01'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git log --oneline
+d7b78c3 (HEAD -> foo, tag: 1.0.12, main) 5th commit
+c51470e (tag: 1.0.11) fourth commit
+accda99 (tag: 1.0.1) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git branch -f foo c51470e
+fatal: cannot force update the branch 'foo' used by worktree at 'C:/Users/pc07-0
+0/Documents/MJH/Codes-Doodream/260106/01'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git rebase foo
+Current branch foo is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git branch -f main c51470e
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git rebase main
+Current branch foo is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git log --oneline
+d7b78c3 (HEAD -> foo, tag: 1.0.12) 5th commit
+c51470e (tag: 1.0.11, main) fourth commit
+accda99 (tag: 1.0.1) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git rebase foo
+Current branch foo is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git rebase main
+Current branch foo is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git log --oneline
+d7b78c3 (HEAD -> foo, tag: 1.0.12) 5th commit
+c51470e (tag: 1.0.11, main) fourth commit
+accda99 (tag: 1.0.1) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git log --oneline
+c51470e (HEAD -> main, tag: 1.0.11) fourth commit
+accda99 (tag: 1.0.1) third commit
+c31d3ee (tag: 1.0.0a) second commit
+238304b (tag: 1.0.0b) first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git merge
+fatal: No remote for the current branch.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git merge main
+Already up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ git merge foo
+Updating c51470e..d7b78c3
+Fast-forward
+ foo_e.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 foo_e.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$ ^C
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/01 (main)
+$

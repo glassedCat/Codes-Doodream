@@ -1,0 +1,214 @@
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106 (main)
+$ cd \03
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git init
+Initialized empty Git repository in C:/Users/pc07-00/Documents/MJH/Codes-Doodream/260106/03/.git/
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ add .
+bash: add: command not found
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git commit -m "first commit"
+[main (root-commit) 97aa10c] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git commit -m "second commit
+> "
+[main f343618] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 b.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git commit -m "third commit"
+[main 20d655a] third commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 c.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git branch foo
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git log --oneline
+20d655a (HEAD -> main, foo) third commit
+f343618 second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git checkout foo
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git rebase main
+Current branch foo is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git rebase foo
+Current branch foo is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git checkout foo
+Already on 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git log --oneline
+20d655a (HEAD -> main, foo) third commit
+f343618 second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git branch -f foo f343618
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git log --oneline
+20d655a (HEAD -> main) third commit
+f343618 (foo) second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git checkout foo
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git merge main
+Updating f343618..20d655a
+Fast-forward
+ c.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 c.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git log --oneline
+20d655a (HEAD -> foo, main) third commit
+f343618 second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git log --oneline
+20d655a (HEAD -> main, foo) third commit
+f343618 second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git branch -f foo f343618
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git log --oneline
+20d655a (HEAD -> main) third commit
+f343618 (foo) second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git checkout foo
+Switched to branch 'foo'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git log --oneline
+f343618 (HEAD -> foo) second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git rebase main
+Successfully rebased and updated refs/heads/foo.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git log --oneline
+20d655a (HEAD -> foo, main) third commit
+f343618 second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git branch -f main f343618
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git log --oneline
+20d655a (HEAD -> foo) third commit
+f343618 (main) second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git add .
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git commit -m "4th commit"
+[foo 9585ab9] 4th commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 foo_d.txt
+ create mode 100644 foo_e.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git log --oneline
+9585ab9 (HEAD -> foo) 4th commit
+20d655a third commit
+f343618 (main) second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git log --oneline --graph --all
+* 9585ab9 (HEAD -> foo) 4th commit
+* 20d655a third commit
+* f343618 (main) second commit
+* 97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (foo)
+$ git checkout main
+Switched to branch 'main'
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git log --oneline --graph
+* f343618 (HEAD -> main) second commit
+* 97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git merge foo
+Updating f343618..9585ab9
+Fast-forward
+ c.txt     | 1 +
+ foo_d.txt | 1 +
+ foo_e.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 c.txt
+ create mode 100644 foo_d.txt
+ create mode 100644 foo_e.txt
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git log --oneline
+9585ab9 (HEAD -> main, foo) 4th commit
+20d655a third commit
+f343618 second commit
+97aa10c first commit
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git foo rebase
+git: 'foo' is not a git command. See 'git --help'.
+
+The most similar command is
+        hook
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$ git rebase foo
+Current branch main is up to date.
+
+pc07-00@DESKTOP-OCSPDAU MINGW64 ~/Documents/MJH/Codes-Doodream/260106/03 (main)
+$
