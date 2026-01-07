@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title> 
+<script src="src/script.js"></script> 
+<style>
+    input:not(#display)
+    {
+        cursor: pointer;
+    }
+    .calBtn
+    {
+        width: 50px;
+    }
+    .bracket
+    {
+        width: 22.5px;
+    }
+    #display
+    {
+        width: 148px;
+    }
+</style>
+</head>
+<body>
+    <form>
+        Display
+        <input id="display" value="0" size="30"><br>
+        <input class="calBtn" type="button" value="%" onclick="add('%')">
+        <input class="calBtn" type="button" value="÷" onclick="add('/')">
+        <input class="calBtn" type="button" value="C" onclick="_clear()">
+        <input class="calBtn" type="button" value=" &lt;= " onclick="erase()"><br>
+        <input class="calBtn" type="button" value="7" onclick="add('7')">
+        <input class="calBtn" type="button" value="8" onclick="add('8')">
+        <input class="calBtn" type="button" value="9" onclick="add('9')">
+        <input class="calBtn" type="button" value="x" onclick="add('*')"><br>
+        <input class="calBtn" type="button" value="4" onclick="add('4')">
+        <input class="calBtn" type="button" value="5" onclick="add('5')">
+        <input class="calBtn" type="button" value="6" onclick="add('6')">
+        <input class="calBtn" type="button" value="+" onclick="add('+')"><br>
+        <input class="calBtn" type="button" value="1" onclick="add('1')">
+        <input class="calBtn" type="button" value="2" onclick="add('2')">
+        <input class="calBtn" type="button" value="3" onclick="add('3')">
+        <input class="calBtn" type="button" value="-" onclick="add('-')"><br>
+        <input class="bracket" type="button" value="(" onclick="add('(')">
+        <input class="bracket" type="button" value=")" onclick="add(')')">
+        <input class="calBtn" type="button" value="0" onclick="add('0')">
+        <input class="calBtn" type="button" value="." onclick="add('.')">
+        <input class="calBtn" type="button" value="Enter" onclick="calculate()">
+    </form>
+</body>
+</html>

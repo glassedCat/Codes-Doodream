@@ -31,7 +31,7 @@
     <script>
         function test()
         {
-            let unOrderedList=document.getElementsByTagName('ul');
+            let unOrderedList=document.getElementsByTagName('ul')[0];
             let innerItems;
             for(let i=0;i<unOrderedList.length;i++)
                 innerItems=unOrderedList[i].getElementsByTagName('li'); // getElementsByTagName에는 .value를 사용할 수 없다.

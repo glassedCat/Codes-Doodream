@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>on_events</title>  
+<script src="src/script.js"></script>
+<style>
+    div
+    {
+        background-color: lightpink; 
+        width: 200px;
+    }
+    #hoverEvent, #btn
+    {
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<h2>onchange() 이벤트</h2>
+영어 문장을 입력해보세요: <input type="text" id="en" onchange="toUC()">
+<p>If it goes out of this input, u gonn' be uppercased XD</p>
+<hr>
+<!---------------------------------------------------------------------->
+<h2>onmouseover() 이벤트</h2>
+<p>*함수 괄호 내부에 this 요소를 사용하고, 스크립트에서 그걸 받아줄 매개변수를 사용한다.</p>
+<div id="hoverEvent" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)">
+hOver Ur mOuSe oVer Here! OwO
+</div>
+<hr> 
+<!---------------------------------------------------------------------->
+<h2>onmousedown(), onmouseup()</h2>
+<button onmousedown="mouseDn(this)" onmouseup="mouseUp(this)" id="btn">
+Gimme a squeeze &gt;w&lt;! OwO (It will go orange!)
+</button>
+<hr>
+<!---------------------------------------------------------------------->
+
+</body>
+</html>

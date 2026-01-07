@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Object Model (브라우저 객체)</title>
+  <script src="src/script.js"></script>
+  <style>
+    button, input
+    {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+    <h2>새로운 윈도우 오픈</h2>
+    <p>window.open("URL경로", "창이름", "옵션설정", replace);</p>
+    <input type="button" onclick="window.open('https://images.google.com/search?q=boykisser&tbm=isch', 
+    '_blank', 'height=540, width=960, top=200, left=250')" 
+    value="구글창 열기">
+
+
+    <h2>setTimeout()</h2>
+    <p>버튼을 누르면 3초 후에 경고 박스가 화면에 표시됩니다.</p>
+    <button onclick="Alert()">Click Me! (>_<)</button>
+</body>
+</html>
