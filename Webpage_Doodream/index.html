@@ -32,11 +32,11 @@
         </div>
         <!-- 여기까지가 한줄이다 하고 경계를 짓는 선-->
         <div class="col-md-7 col-lg-5"> 
-            <h3 class="fw-bold my-3 my-md-0 mb-md-3">Doodream Emmy</h3> <!-- margin Y > middle size (tablet size) > scale number -->
+            <h3 class="fw-bold my-3 my-md-0 mb">Doodream Emmy</h3> <!-- margin Y > middle size (tablet size) > scale number -->
             <!--
             my-3: (기본값) 모든 화면에서 위아래 마진을 3만큼 줍니다.
             my-md-0: 화면이 중간 크기(md) 이상이 되면 위아래 마진을 0으로 바꿉니다.
-            mb-md-3: 화면이 중간 크기(md) 이상이 되면 아래쪽 마진만 다시 3을 줍니다.
+            mb: 화면이 중간 크기(md) 이상이 되면 아래쪽 마진만 다시 3을 줍니다.
             -->
             <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil nobis minima, molestiae corrupti numquam necessitatibus? Libero rerum soluta ab cupiditate, debitis esse fugit incidunt?</p>
             <!-- line height: large 행간 -->
@@ -60,7 +60,7 @@
          웹은 기본적으로 12칸을 기준으로 계산하고, 그 곳을 기기 사이즈에 따라
          몇 칸 정도 사용할거냐, 이게 col-sm-n / col-md-n / col-lg-n 이다.
          모바일에서 만약 2개의 칸으로 나눠서 쓰고 싶다면 col-sm-6(12/6=2), 
-         태블릿에서 4칸으로 나눠쓰고 싶다면 col-md-3 같이 사용하면 된다.
+         태블릿에서 4칸으로 나눠쓰고 싶다면 col 같이 사용하면 된다.
          col-sm-n col-md-n 처럼 같이 오는 것은, 모바일 사이즈에선 몇칸을 
          차지하고, 태블릿 사이즈에선 몇 칸을 차지하겠다 라고 선언하는 것이다.
 
@@ -99,18 +99,21 @@
 
 
 <section id="sns-links" class="py-5">
-  <div class="text-center text-white">
+  <div class="container text-center text-white">
     <h2>ART Cook SNS</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quos.</p>
-    <div class="d-flex align-items-center justify-content-evenly">
-      <a href="https://steamcommunity.com/id/jordan">
-        <i class="bi bi-steam fs-1" style="color: #1b2838;"></i>
+    <div class="d-flex align-items-center justify-content-evenly w-50 mt-4 m-auto">
+      <a href="https://steamcommunity.com/id/jordan"class="btn btn-lg btn-primary
+      rounded-pill px-4 link-light">
+        <i class="bi bi-steam"></i>
       </a>
-      <a href="https://x.com/ovopack">
-        <i class="bi bi-twitter-x fs-1" style="color: black;"></i>
+      <a href="https://x.com/ovopack"class="btn btn-lg rounded-pill btn-dark
+      px-4 link-light">
+        <i class="bi bi-twitter-x"></i>
       </a>
-      <a href="https://www.youtube.com/@%EA%B3%BC%EB%A1%9C%EC%82%AC">
-        <i class="bi bi-youtube fs-1" style="color: red;"></i>
+      <a href="https://www.youtube.com/@%EA%B3%BC%EB%A1%9C%EC%82%AC" class="btn btn-lg btn-danger
+      rounded-pill px-4 link-light">
+        <i class="bi bi-youtube"></i>
       </a>
     </div>
   </div>
@@ -118,7 +121,42 @@
 
 <!-- SNS 끝 -->
 
-
+<!-- 연락처 시작-->
+<section class="container mb-5">
+  <div class="justify-content-center align-items-center text-center">
+    <div class="mt-4 mb-5 py-5">
+      <h2>Contact</h2>
+      <i class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, iste.</i>
+    </div>
+    <div class="row align-items-center justify-content-center"> <!-- 내부 아이템을 맞추고싶다면 반드시 row '바로 아래(내부)'에 col 속성을 가진 아이템들을 넣어줘야 한다. -->
+      <div class="col-md-3">
+          <div class="p-3 shadow fs-5 border-4 border-bottom border-warning">
+            <i class="bi bi-envelope-heart text-warning"></i>
+            <h4>이메일</h4>
+            <hr class="text-secondary">
+            <p>fakemail@fakedomain.com</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="p-3 shadow fs-5 border-4 border-bottom border-success">
+            <i class="bi bi-telephone-fill text-success"></i>
+            <h4>전화번호</h4>
+            <hr class="text-secondary">
+            <p>010-1234-5678</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="p-3 shadow fs-5 border-4 border-bottom border-danger">
+            <i class="bi bi-building-fill text-danger"></i>
+            <h4>주소</h4>
+            <hr class="text-secondary">
+            <p>서울특별시 가짜구 가짜동</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 연락처 끝-->
 
 
   <script src="src/js/bootstrap.bundle.js"></script>
