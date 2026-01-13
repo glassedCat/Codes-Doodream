@@ -83,7 +83,7 @@ order by CountryCode asc, Population desc;
 
 
 # 면적이 넓은 상위 5개 나라 
-select name, surfaceArea
+select name, (surfaceArea-surfaceArea%1)
 from country
 order by surfaceArea desc
 limit 5;
@@ -93,7 +93,12 @@ limit 5;
  order by LifeExpectancy desc
  limit 1, 5;
 
-
+select name as 국가,
+LifeExpectancy as 기대수명
+from country
+where LifeExpectancy is not null
+order by LifeExpectancy
+limit 5;
 
 
 
