@@ -25,6 +25,13 @@ h3, h2, h4, h5
 {
     background-image: url('../img/sns-bg.jpg'); 
 }
+#boundary
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
 /*
 #cookBtn
 {
