@@ -156,19 +156,18 @@
     </div>
   </div>
 </section>
-<hr class="text-secondary" id="boundary">
 <!-- 연락처 끝-->
+<hr class="text-secondary" id="boundary">
 <!-- 서비스 섹션 시작 -->
-<section class="container mb-5" id="_service">
-  <div id="#1">
-    <div id="#2-1" class="justify-content-center align-items-center text-center mb-5">
+<section class="container" id="_service">
+    <div id="#1-1" class="justify-content-center align-items-center text-center mb-5">
       <h2>ART Cook 서비스</h2>
       <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, suscipit.</p>
     </div>
-    <div id="#2-2">
-      <div class="row mb-5 g-4">
-          <div id="#3-1" class="col-md-6 justify-content-start text-start d-flex">
-            <div class="shadow clearfix">
+    <div id="#1-2">
+      <div class="row mb-5 g-4 d-flex card-box">
+          <div id="#2-1" class="col-md-6 justify-content-start text-start ">
+            <div class="shadow clearfix cards">
               <img class="img-thumbnail rounded-circle float-start me-3" src="src/img/service1.jpg">
               <div>
                 <h3>케이터링</h3>
@@ -177,8 +176,8 @@
               <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur eum illum rem vel nam alias labore, dolore, itaque, natus tenetur sapiente ratione nobis minus.</p>
             </div>  
           </div>
-          <div id="#3-2" class="col-md-6 justify-content-end text-end">
-            <div class="shadow clearfix">
+          <div id="#2-2" class="col-md-6 justify-content-end text-end ">
+            <div class="shadow clearfix cards">
               <img class="img-thumbnail rounded-circle float-end ms-3" src="src/img/service2.jpg">
               <div>
                 <h3>아트쿡 클래스</h3>
@@ -187,8 +186,8 @@
               <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur eum illum rem vel nam alias labore, dolore, itaque, natus tenetur sapiente ratione nobis minus.</p>
             </div>
           </div>
-          <div id="#3-3" class="col-md-6 justify-content-start text-start">
-            <div class="shadow clearfix">
+          <div id="#2-3" class="col-md-6 justify-content-start text-start ">
+            <div class="shadow clearfix cards">
               <img class="img-thumbnail rounded-circle float-start me-3" src="src/img/service3.jpg">
               <div>
                 <h3>디저트 아트</h3>
@@ -197,8 +196,8 @@
               <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur eum illum rem vel nam alias labore, dolore, itaque, natus tenetur sapiente ratione nobis minus.</p>
             </div>
           </div>
-          <div id="#3-4" class="col-md-6 justify-content-end text-end">
-            <div class="shadow clearfix">
+          <div id="#2-4" class="col-md-6 justify-content-end text-end ">
+            <div class="shadow clearfix cards">
               <img class="img-thumbnail rounded-circle float-end ms-3" src="src/img/service4.jpg">
               <div>
                 <h3>신제품 개발</h3>
@@ -209,10 +208,103 @@
           </div>
       </div>
     </div>
-  </div>
 </section>
 <!-- 서비스 섹션 끝 -->
-  <script src="src/js/bootstrap.bundle.js"></script>
+<hr class="text-secondary" id="boundary">
+<!-- 블로그 섹션 시작 -->
+<section class="container overflow-hidden py-5">
+  <div class="text-center pb-5">
+    <h2>ART Cook 블로그</h2>
+    <p class="small text-secondary">Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="row pb-5 gy-4 text-center">
+    <!-- col-sm-6은 작은 모바일화면에서 12칸중 6칸(2개 영역)을 차지, col-lg는 큰 pc화면에서 12칸 중 자동분배하라는 뜻-->
+    <div class="col-md- col-lg"> 
+      <img class="card-img-top" src="src/img/blog1.jpg" alt="">
+      <div>
+        <h3 class="card">블로그 1</h3>
+        <p class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dicta deleniti repellendus totam odio necessitatibus sit, minima unde molestias pariatur?</p>
+        <a href="#" class="btn btn-warning btn-sm">Read more...</a>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg">
+      <img class="card-img-top" src="src/img/blog2.jpg" alt="">
+      <div>
+        <h3 class="card">블로그 2</h3>
+        <p class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dicta deleniti repellendus totam odio necessitatibus sit, minima unde molestias pariatur?</p>
+        <a href="#" class="btn btn-warning btn-sm">Read more...</a>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg">
+      <img class="card-img-top" src="src/img/blog3.jpg" alt="">
+      <div>
+        <h3 class="card">블로그 3</h3>
+        <p class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dicta deleniti repellendus totam odio necessitatibus sit, minima unde molestias pariatur?</p>
+        <a href="#" class="btn btn-warning btn-sm">Read more...</a>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg">
+      <img class="card-img-top" src="src/img/blog4.jpg" alt=""> <!-- object-fit: cover; (이미지들 해상도가 다를때) -->
+      <div>
+        <h3 class="card">블로그 4</h3>
+        <p class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dicta deleniti repellendus totam odio necessitatibus sit, minima unde molestias pariatur?</p>
+        <a href="#" class="btn btn-warning btn-sm">Read more...</a> <!-- 링크 버튼에는 카드 속성이 들어가면 안된다. 크기 조절이 불가능. -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 블로그 섹션 끝 -->
+
+
+
+
+
+
+
+
+
+
+
+<hr class="text-secondary">
+<!-- 뉴스 섹션 시작 -->
+<section class="py-5" id="news">
+  <div class="row p-4 align-items-center text-center text-light">
+    <div>
+      <div>
+        <h2>ART Cook News</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro omnis sapiente maxime non soluta delectus.</p>
+      </div>
+      <div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        영상보기
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://www.youtube.com/embed/rYvnsOf5HeA" title="[투네이션] 1,000원, 10,000원 후원 알림 효과음" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+            </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      <!-- Modal -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 뉴스 섹션 끝 -->
+<script src="src/js/bootstrap.bundle.js"></script>
 </body>
 </html>
 
